@@ -1,0 +1,4 @@
+http://www.vamp-plugins.org/rdf/plugins/vamp-example-plugins
+http://www.vamp-plugins.org/rdf/plugins/ofa-vamp-plugin
+http://www.vamp-plugins.org/rdf/plugins/vamp-libxtract
+
