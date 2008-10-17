@@ -70,7 +70,7 @@ plugbase:amdf a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "amdf" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -95,7 +95,7 @@ plugbase:asdf a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "asdf" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -120,7 +120,7 @@ plugbase:autocorrelation a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "autocorrelation" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -145,7 +145,7 @@ plugbase:average_deviation a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "average_deviation" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -170,7 +170,7 @@ plugbase:bark_coefficients a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bark_coefficients" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -195,7 +195,7 @@ plugbase:crest a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "crest" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -220,7 +220,7 @@ plugbase:dct a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "dct" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -245,7 +245,7 @@ plugbase:f0 a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "f0" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -270,7 +270,7 @@ plugbase:failsafe_f0 a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "failsafe_f0" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -295,7 +295,7 @@ plugbase:flatness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "flatness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -320,18 +320,18 @@ plugbase:harmonic_spectrum a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "harmonic_spectrum" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:harmonic_spectrum_param_peak threshold ;
-    vamp:parameter   plugbase:harmonic_spectrum_param_harmonic threshold ;
+    vamp:parameter   plugbase:harmonic_spectrum_param_peak-threshold ;
+    vamp:parameter   plugbase:harmonic_spectrum_param_harmonic-threshold ;
 
     vamp:output      plugbase:harmonic_spectrum_output_amplitudes ;
     .
-plugbase:harmonic_spectrum_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:harmonic_spectrum_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -340,8 +340,8 @@ plugbase:harmonic_spectrum_param_peak threshold a  vamp:Parameter ;
     vamp:default_value   10 ;
     vamp:value_names     ();
     .
-plugbase:harmonic_spectrum_param_harmonic threshold a  vamp:Parameter ;
-    vamp:identifier     "harmonic threshold" ;
+plugbase:harmonic_spectrum_param_harmonic-threshold a  vamp:Parameter ;
+    vamp:identifier     "harmonic-threshold" ;
     dc:title            "Harmonic Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
@@ -369,7 +369,7 @@ plugbase:highest_value a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "highest_value" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -394,7 +394,7 @@ plugbase:irregularity_j a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "irregularity_j" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -419,7 +419,7 @@ plugbase:irregularity_k a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "irregularity_k" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -444,7 +444,7 @@ plugbase:kurtosis a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "kurtosis" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -469,7 +469,7 @@ plugbase:loudness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "loudness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -494,7 +494,7 @@ plugbase:lowest_value a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "lowest_value" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -519,7 +519,7 @@ plugbase:mean a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mean" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -544,7 +544,7 @@ plugbase:mfcc a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mfcc" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -641,18 +641,18 @@ plugbase:noisiness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "noisiness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:noisiness_param_peak threshold ;
-    vamp:parameter   plugbase:noisiness_param_harmonic threshold ;
+    vamp:parameter   plugbase:noisiness_param_peak-threshold ;
+    vamp:parameter   plugbase:noisiness_param_harmonic-threshold ;
 
     vamp:output      plugbase:noisiness_output_noisiness ;
     .
-plugbase:noisiness_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:noisiness_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -661,8 +661,8 @@ plugbase:noisiness_param_peak threshold a  vamp:Parameter ;
     vamp:default_value   10 ;
     vamp:value_names     ();
     .
-plugbase:noisiness_param_harmonic threshold a  vamp:Parameter ;
-    vamp:identifier     "harmonic threshold" ;
+plugbase:noisiness_param_harmonic-threshold a  vamp:Parameter ;
+    vamp:identifier     "harmonic-threshold" ;
     dc:title            "Harmonic Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
@@ -690,17 +690,17 @@ plugbase:nonzero_count a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "nonzero_count" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:nonzero_count_param_peak threshold ;
+    vamp:parameter   plugbase:nonzero_count_param_peak-threshold ;
 
     vamp:output      plugbase:nonzero_count_output_nonzero_count ;
     .
-plugbase:nonzero_count_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:nonzero_count_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -728,18 +728,18 @@ plugbase:odd_even_ratio a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "odd_even_ratio" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:odd_even_ratio_param_peak threshold ;
-    vamp:parameter   plugbase:odd_even_ratio_param_harmonic threshold ;
+    vamp:parameter   plugbase:odd_even_ratio_param_peak-threshold ;
+    vamp:parameter   plugbase:odd_even_ratio_param_harmonic-threshold ;
 
     vamp:output      plugbase:odd_even_ratio_output_odd_even_ratio ;
     .
-plugbase:odd_even_ratio_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:odd_even_ratio_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -748,8 +748,8 @@ plugbase:odd_even_ratio_param_peak threshold a  vamp:Parameter ;
     vamp:default_value   10 ;
     vamp:value_names     ();
     .
-plugbase:odd_even_ratio_param_harmonic threshold a  vamp:Parameter ;
-    vamp:identifier     "harmonic threshold" ;
+plugbase:odd_even_ratio_param_harmonic-threshold a  vamp:Parameter ;
+    vamp:identifier     "harmonic-threshold" ;
     dc:title            "Harmonic Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
@@ -777,17 +777,17 @@ plugbase:peak_spectrum a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "peak_spectrum" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:peak_spectrum_param_peak threshold ;
+    vamp:parameter   plugbase:peak_spectrum_param_peak-threshold ;
 
     vamp:output      plugbase:peak_spectrum_output_amplitudes ;
     .
-plugbase:peak_spectrum_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:peak_spectrum_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -815,7 +815,7 @@ plugbase:rms_amplitude a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "rms_amplitude" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -840,17 +840,17 @@ plugbase:rolloff a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "rolloff" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:rolloff_param_rolloff threshold ;
+    vamp:parameter   plugbase:rolloff_param_rolloff-threshold ;
 
     vamp:output      plugbase:rolloff_output_rolloff ;
     .
-plugbase:rolloff_param_rolloff threshold a  vamp:Parameter ;
-    vamp:identifier     "rolloff threshold" ;
+plugbase:rolloff_param_rolloff-threshold a  vamp:Parameter ;
+    vamp:identifier     "rolloff-threshold" ;
     dc:title            "Rolloff Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -878,7 +878,7 @@ plugbase:sharpness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "sharpness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -903,7 +903,7 @@ plugbase:skewness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "skewness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -928,7 +928,7 @@ plugbase:smoothness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "smoothness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -953,7 +953,7 @@ plugbase:spectral_average_deviation a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_average_deviation" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -978,7 +978,7 @@ plugbase:spectral_centroid a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_centroid" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1003,17 +1003,17 @@ plugbase:spectral_inharmonicity a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_inharmonicity" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:spectral_inharmonicity_param_peak threshold ;
+    vamp:parameter   plugbase:spectral_inharmonicity_param_peak-threshold ;
 
     vamp:output      plugbase:spectral_inharmonicity_output_spectral_inharmonicity ;
     .
-plugbase:spectral_inharmonicity_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:spectral_inharmonicity_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -1041,7 +1041,7 @@ plugbase:spectral_kurtosis a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_kurtosis" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1066,7 +1066,7 @@ plugbase:spectral_skewness a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_skewness" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1091,7 +1091,7 @@ plugbase:spectral_slope a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_slope" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1116,7 +1116,7 @@ plugbase:spectral_standard_deviation a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_standard_deviation" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1141,7 +1141,7 @@ plugbase:spectral_variance a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_variance" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1166,7 +1166,7 @@ plugbase:spectrum a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectrum" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
@@ -1191,7 +1191,7 @@ plugbase:spread a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spread" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1216,7 +1216,7 @@ plugbase:standard_deviation a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "standard_deviation" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1241,7 +1241,7 @@ plugbase:sum a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "sum" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1266,7 +1266,7 @@ plugbase:tonality a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tonality" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1291,18 +1291,18 @@ plugbase:tristimulus_1 a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tristimulus_1" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:tristimulus_1_param_peak threshold ;
-    vamp:parameter   plugbase:tristimulus_1_param_harmonic threshold ;
+    vamp:parameter   plugbase:tristimulus_1_param_peak-threshold ;
+    vamp:parameter   plugbase:tristimulus_1_param_harmonic-threshold ;
 
     vamp:output      plugbase:tristimulus_1_output_tristimulus_1 ;
     .
-plugbase:tristimulus_1_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:tristimulus_1_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -1311,8 +1311,8 @@ plugbase:tristimulus_1_param_peak threshold a  vamp:Parameter ;
     vamp:default_value   10 ;
     vamp:value_names     ();
     .
-plugbase:tristimulus_1_param_harmonic threshold a  vamp:Parameter ;
-    vamp:identifier     "harmonic threshold" ;
+plugbase:tristimulus_1_param_harmonic-threshold a  vamp:Parameter ;
+    vamp:identifier     "harmonic-threshold" ;
     dc:title            "Harmonic Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
@@ -1340,18 +1340,18 @@ plugbase:tristimulus_2 a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tristimulus_2" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:tristimulus_2_param_peak threshold ;
-    vamp:parameter   plugbase:tristimulus_2_param_harmonic threshold ;
+    vamp:parameter   plugbase:tristimulus_2_param_peak-threshold ;
+    vamp:parameter   plugbase:tristimulus_2_param_harmonic-threshold ;
 
     vamp:output      plugbase:tristimulus_2_output_tristimulus_2 ;
     .
-plugbase:tristimulus_2_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:tristimulus_2_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -1360,8 +1360,8 @@ plugbase:tristimulus_2_param_peak threshold a  vamp:Parameter ;
     vamp:default_value   10 ;
     vamp:value_names     ();
     .
-plugbase:tristimulus_2_param_harmonic threshold a  vamp:Parameter ;
-    vamp:identifier     "harmonic threshold" ;
+plugbase:tristimulus_2_param_harmonic-threshold a  vamp:Parameter ;
+    vamp:identifier     "harmonic-threshold" ;
     dc:title            "Harmonic Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
@@ -1389,18 +1389,18 @@ plugbase:tristimulus_3 a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tristimulus_3" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
 
-    vamp:parameter   plugbase:tristimulus_3_param_peak threshold ;
-    vamp:parameter   plugbase:tristimulus_3_param_harmonic threshold ;
+    vamp:parameter   plugbase:tristimulus_3_param_peak-threshold ;
+    vamp:parameter   plugbase:tristimulus_3_param_harmonic-threshold ;
 
     vamp:output      plugbase:tristimulus_3_output_tristimulus_3 ;
     .
-plugbase:tristimulus_3_param_peak threshold a  vamp:Parameter ;
-    vamp:identifier     "peak threshold" ;
+plugbase:tristimulus_3_param_peak-threshold a  vamp:Parameter ;
+    vamp:identifier     "peak-threshold" ;
     dc:title            "Peak Threshold" ;
     dc:format           "%" ;
     vamp:min_value       0 ;
@@ -1409,8 +1409,8 @@ plugbase:tristimulus_3_param_peak threshold a  vamp:Parameter ;
     vamp:default_value   10 ;
     vamp:value_names     ();
     .
-plugbase:tristimulus_3_param_harmonic threshold a  vamp:Parameter ;
-    vamp:identifier     "harmonic threshold" ;
+plugbase:tristimulus_3_param_harmonic-threshold a  vamp:Parameter ;
+    vamp:identifier     "harmonic-threshold" ;
     dc:title            "Harmonic Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
@@ -1438,7 +1438,7 @@ plugbase:variance a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "variance" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:FrequencyDomain ;
 
@@ -1463,7 +1463,7 @@ plugbase:zcr a   vamp:Plugin ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "zcr" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
+    vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
