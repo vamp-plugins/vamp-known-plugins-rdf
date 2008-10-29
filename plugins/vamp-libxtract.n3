@@ -1,7 +1,7 @@
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix vamp:     <http://purl.org/ontology/vamp/> .
-@prefix plugbase: <http://www.vamp-plugins.org/rdf/plugins/vamp-libxtract#> .
+@prefix plugbase: <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#> .
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix af:       <http://purl.org/ontology/af/> .
@@ -10,70 +10,71 @@
 @prefix :         <> .
 
 <>  a   vamp:PluginDescription ;
-    foaf:maker          <none> ;
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
-    foaf:primaryTopic   <http://www.vamp-plugins.org/rdf/plugins/vamp-libxtract> .
+    foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/vamp-libxtract> .
 
 :vamp-libxtract a  vamp:PluginLibrary ;
-    vamp:identifier "vamp-libxtract" ; 
-    vamp:available_plugin plugbase:amdf; 
-    vamp:available_plugin plugbase:asdf; 
-    vamp:available_plugin plugbase:autocorrelation; 
-    vamp:available_plugin plugbase:average_deviation; 
-    vamp:available_plugin plugbase:bark_coefficients; 
-    vamp:available_plugin plugbase:crest; 
-    vamp:available_plugin plugbase:dct; 
-    vamp:available_plugin plugbase:f0; 
-    vamp:available_plugin plugbase:failsafe_f0; 
-    vamp:available_plugin plugbase:flatness; 
-    vamp:available_plugin plugbase:harmonic_spectrum; 
-    vamp:available_plugin plugbase:highest_value; 
-    vamp:available_plugin plugbase:irregularity_j; 
-    vamp:available_plugin plugbase:irregularity_k; 
-    vamp:available_plugin plugbase:kurtosis; 
-    vamp:available_plugin plugbase:loudness; 
-    vamp:available_plugin plugbase:lowest_value; 
-    vamp:available_plugin plugbase:mean; 
-    vamp:available_plugin plugbase:mfcc; 
-    vamp:available_plugin plugbase:noisiness; 
-    vamp:available_plugin plugbase:nonzero_count; 
-    vamp:available_plugin plugbase:odd_even_ratio; 
-    vamp:available_plugin plugbase:peak_spectrum; 
-    vamp:available_plugin plugbase:rms_amplitude; 
-    vamp:available_plugin plugbase:rolloff; 
-    vamp:available_plugin plugbase:sharpness; 
-    vamp:available_plugin plugbase:skewness; 
-    vamp:available_plugin plugbase:smoothness; 
-    vamp:available_plugin plugbase:spectral_average_deviation; 
-    vamp:available_plugin plugbase:spectral_centroid; 
-    vamp:available_plugin plugbase:spectral_inharmonicity; 
-    vamp:available_plugin plugbase:spectral_kurtosis; 
-    vamp:available_plugin plugbase:spectral_skewness; 
-    vamp:available_plugin plugbase:spectral_slope; 
-    vamp:available_plugin plugbase:spectral_standard_deviation; 
-    vamp:available_plugin plugbase:spectral_variance; 
-    vamp:available_plugin plugbase:spectrum; 
-    vamp:available_plugin plugbase:spread; 
-    vamp:available_plugin plugbase:standard_deviation; 
-    vamp:available_plugin plugbase:sum; 
-    vamp:available_plugin plugbase:tonality; 
-    vamp:available_plugin plugbase:tristimulus_1; 
-    vamp:available_plugin plugbase:tristimulus_2; 
-    vamp:available_plugin plugbase:tristimulus_3; 
-    vamp:available_plugin plugbase:variance; 
-    vamp:available_plugin plugbase:zcr .
+    vamp:identifier "vamp-libxtract"  ; 
+    vamp:available_plugin plugbase:amdf ; 
+    vamp:available_plugin plugbase:asdf ; 
+    vamp:available_plugin plugbase:autocorrelation ; 
+    vamp:available_plugin plugbase:average_deviation ; 
+    vamp:available_plugin plugbase:bark_coefficients ; 
+    vamp:available_plugin plugbase:crest ; 
+    vamp:available_plugin plugbase:dct ; 
+    vamp:available_plugin plugbase:f0 ; 
+    vamp:available_plugin plugbase:failsafe_f0 ; 
+    vamp:available_plugin plugbase:flatness ; 
+    vamp:available_plugin plugbase:harmonic_spectrum ; 
+    vamp:available_plugin plugbase:highest_value ; 
+    vamp:available_plugin plugbase:irregularity_j ; 
+    vamp:available_plugin plugbase:irregularity_k ; 
+    vamp:available_plugin plugbase:kurtosis ; 
+    vamp:available_plugin plugbase:loudness ; 
+    vamp:available_plugin plugbase:lowest_value ; 
+    vamp:available_plugin plugbase:mean ; 
+    vamp:available_plugin plugbase:mfcc ; 
+    vamp:available_plugin plugbase:noisiness ; 
+    vamp:available_plugin plugbase:nonzero_count ; 
+    vamp:available_plugin plugbase:odd_even_ratio ; 
+    vamp:available_plugin plugbase:peak_spectrum ; 
+    vamp:available_plugin plugbase:rms_amplitude ; 
+    vamp:available_plugin plugbase:rolloff ; 
+    vamp:available_plugin plugbase:sharpness ; 
+    vamp:available_plugin plugbase:skewness ; 
+    vamp:available_plugin plugbase:smoothness ; 
+    vamp:available_plugin plugbase:spectral_average_deviation ; 
+    vamp:available_plugin plugbase:spectral_centroid ; 
+    vamp:available_plugin plugbase:spectral_inharmonicity ; 
+    vamp:available_plugin plugbase:spectral_kurtosis ; 
+    vamp:available_plugin plugbase:spectral_skewness ; 
+    vamp:available_plugin plugbase:spectral_slope ; 
+    vamp:available_plugin plugbase:spectral_standard_deviation ; 
+    vamp:available_plugin plugbase:spectral_variance ; 
+    vamp:available_plugin plugbase:spectrum ; 
+    vamp:available_plugin plugbase:spread ; 
+    vamp:available_plugin plugbase:standard_deviation ; 
+    vamp:available_plugin plugbase:sum ; 
+    vamp:available_plugin plugbase:tonality ; 
+    vamp:available_plugin plugbase:tristimulus_1 ; 
+    vamp:available_plugin plugbase:tristimulus_2 ; 
+    vamp:available_plugin plugbase:tristimulus_3 ; 
+    vamp:available_plugin plugbase:variance ; 
+    vamp:available_plugin plugbase:zcr ; 
+#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    .
 
 plugbase:amdf a   vamp:Plugin ;
     dc:title              "Average Magnitude Difference Function" ;
     vamp:name             "Average Magnitude Difference Function" ;
-    dc:description        "Extract the AMDF of an audio signal" ;
+    dc:description        """Extract the AMDF of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "amdf" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:amdf_output_amdf ;
     .
 plugbase:amdf_output_amdf a  vamp:DenseOutput ;
@@ -91,14 +92,14 @@ plugbase:amdf_output_amdf a  vamp:DenseOutput ;
 plugbase:asdf a   vamp:Plugin ;
     dc:title              "Average Squared Difference Function" ;
     vamp:name             "Average Squared Difference Function" ;
-    dc:description        "Extract the ASDF of an audio signal" ;
+    dc:description        """Extract the ASDF of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "asdf" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:asdf_output_asdf ;
     .
 plugbase:asdf_output_asdf a  vamp:DenseOutput ;
@@ -116,14 +117,14 @@ plugbase:asdf_output_asdf a  vamp:DenseOutput ;
 plugbase:autocorrelation a   vamp:Plugin ;
     dc:title              "Autocorrelation" ;
     vamp:name             "Autocorrelation" ;
-    dc:description        "Extract the autocorrelation of an audio signal" ;
+    dc:description        """Extract the autocorrelation of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "autocorrelation" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:autocorrelation_output_autocorrelation ;
     .
 plugbase:autocorrelation_output_autocorrelation a  vamp:DenseOutput ;
@@ -141,8 +142,9 @@ plugbase:autocorrelation_output_autocorrelation a  vamp:DenseOutput ;
 plugbase:average_deviation a   vamp:Plugin ;
     dc:title              "Average Deviation" ;
     vamp:name             "Average Deviation" ;
-    dc:description        "Extract the average deviation of a range of values" ;
+    dc:description        """Extract the average deviation of a range of values""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "average_deviation" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -166,8 +168,9 @@ plugbase:average_deviation_output_average_deviation a  vamp:DenseOutput ;
 plugbase:bark_coefficients a   vamp:Plugin ;
     dc:title              "Bark Coefficients" ;
     vamp:name             "Bark Coefficients" ;
-    dc:description        "Extract bark coefficients from an audio spectrum" ;
+    dc:description        """Extract bark coefficients from an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bark_coefficients" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -191,8 +194,9 @@ plugbase:bark_coefficients_output_bark_coefficients a  vamp:DenseOutput ;
 plugbase:crest a   vamp:Plugin ;
     dc:title              "Spectral Crest Measure" ;
     vamp:name             "Spectral Crest Measure" ;
-    dc:description        "Extract the spectral crest measure of an audio spectrum" ;
+    dc:description        """Extract the spectral crest measure of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Peeters (2003). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "crest" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -216,14 +220,14 @@ plugbase:crest_output_crest a  vamp:DenseOutput ;
 plugbase:dct a   vamp:Plugin ;
     dc:title              "Discrete Cosine Transform" ;
     vamp:name             "Discrete Cosine Transform" ;
-    dc:description        "Extract the DCT of an audio signal" ;
+    dc:description        """Extract the DCT of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "dct" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:dct_output_dct ;
     .
 plugbase:dct_output_dct a  vamp:DenseOutput ;
@@ -241,14 +245,14 @@ plugbase:dct_output_dct a  vamp:DenseOutput ;
 plugbase:f0 a   vamp:Plugin ;
     dc:title              "Fundamental Frequency" ;
     vamp:name             "Fundamental Frequency" ;
-    dc:description        "Extract the fundamental frequency of an audio signal" ;
+    dc:description        """Extract the fundamental frequency of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Jamie Bullock. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "f0" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:f0_output_f0 ;
     .
 plugbase:f0_output_f0 a  vamp:DenseOutput ;
@@ -266,14 +270,14 @@ plugbase:f0_output_f0 a  vamp:DenseOutput ;
 plugbase:failsafe_f0 a   vamp:Plugin ;
     dc:title              "Fundamental Frequency (failsafe)" ;
     vamp:name             "Fundamental Frequency (failsafe)" ;
-    dc:description        "Extract the fundamental frequency of an audio signal (failsafe)" ;
+    dc:description        """Extract the fundamental frequency of an audio signal (failsafe)""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Jamie Bullock. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "failsafe_f0" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:failsafe_f0_output_failsafe_f0 ;
     .
 plugbase:failsafe_f0_output_failsafe_f0 a  vamp:DenseOutput ;
@@ -291,8 +295,9 @@ plugbase:failsafe_f0_output_failsafe_f0 a  vamp:DenseOutput ;
 plugbase:flatness a   vamp:Plugin ;
     dc:title              "Spectral Flatness" ;
     vamp:name             "Spectral Flatness" ;
-    dc:description        "Extract the spectral flatness of an audio spectrum" ;
+    dc:description        """Extract the spectral flatness of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Tristan Jehan (2005). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "flatness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -316,8 +321,9 @@ plugbase:flatness_output_flatness a  vamp:DenseOutput ;
 plugbase:harmonic_spectrum a   vamp:Plugin ;
     dc:title              "Harmonic Spectrum" ;
     vamp:name             "Harmonic Spectrum" ;
-    dc:description        "Extract the harmonics from an audio spectrum" ;
+    dc:description        """Extract the harmonics from an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "harmonic_spectrum" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -365,8 +371,9 @@ plugbase:harmonic_spectrum_output_amplitudes a  vamp:DenseOutput ;
 plugbase:highest_value a   vamp:Plugin ;
     dc:title              "Highest Value" ;
     vamp:name             "Highest Value" ;
-    dc:description        "Extract the highest value from a given range" ;
+    dc:description        """Extract the highest value from a given range""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "highest_value" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -390,8 +397,9 @@ plugbase:highest_value_output_highest_value a  vamp:DenseOutput ;
 plugbase:irregularity_j a   vamp:Plugin ;
     dc:title              "Irregularity II" ;
     vamp:name             "Irregularity II" ;
-    dc:description        "Extract the irregularity (type II) of an audio spectrum" ;
+    dc:description        """Extract the irregularity (type II) of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Jensen (1999). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "irregularity_j" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -415,8 +423,9 @@ plugbase:irregularity_j_output_irregularity_j a  vamp:DenseOutput ;
 plugbase:irregularity_k a   vamp:Plugin ;
     dc:title              "Irregularity I" ;
     vamp:name             "Irregularity I" ;
-    dc:description        "Extract the irregularity (type I) of an audio spectrum" ;
+    dc:description        """Extract the irregularity (type I) of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Krimphoff (1994). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "irregularity_k" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -440,8 +449,9 @@ plugbase:irregularity_k_output_irregularity_k a  vamp:DenseOutput ;
 plugbase:kurtosis a   vamp:Plugin ;
     dc:title              "Kurtosis" ;
     vamp:name             "Kurtosis" ;
-    dc:description        "Extract the kurtosis of a range of values" ;
+    dc:description        """Extract the kurtosis of a range of values""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "kurtosis" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -465,8 +475,9 @@ plugbase:kurtosis_output_kurtosis a  vamp:DenseOutput ;
 plugbase:loudness a   vamp:Plugin ;
     dc:title              "Loudness" ;
     vamp:name             "Loudness" ;
-    dc:description        "Extract the loudness of an audio signal from its spectrum" ;
+    dc:description        """Extract the loudness of an audio signal from its spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Moore, Glasberg et al (2005). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "loudness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -490,8 +501,9 @@ plugbase:loudness_output_loudness a  vamp:DenseOutput ;
 plugbase:lowest_value a   vamp:Plugin ;
     dc:title              "Lowest Value" ;
     vamp:name             "Lowest Value" ;
-    dc:description        "Extract the lowest value from a given range" ;
+    dc:description        """Extract the lowest value from a given range""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "lowest_value" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -515,8 +527,9 @@ plugbase:lowest_value_output_lowest_value a  vamp:DenseOutput ;
 plugbase:mean a   vamp:Plugin ;
     dc:title              "Mean" ;
     vamp:name             "Mean" ;
-    dc:description        "Extract the mean of a range of values" ;
+    dc:description        """Extract the mean of a range of values""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mean" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -540,8 +553,9 @@ plugbase:mean_output_mean a  vamp:DenseOutput ;
 plugbase:mfcc a   vamp:Plugin ;
     dc:title              "Mel-Frequency Cepstral Coefficients" ;
     vamp:name             "Mel-Frequency Cepstral Coefficients" ;
-    dc:description        "Extract MFCC from an audio spectrum" ;
+    dc:description        """Extract MFCC from an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Rabiner. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mfcc" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -637,8 +651,9 @@ plugbase:mfcc_output_mfcc a  vamp:DenseOutput ;
 plugbase:noisiness a   vamp:Plugin ;
     dc:title              "Noisiness" ;
     vamp:name             "Noisiness" ;
-    dc:description        "Extract the noisiness of an audio  spectrum" ;
+    dc:description        """Extract the noisiness of an audio  spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Tae Hong Park (2000). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "noisiness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -686,8 +701,9 @@ plugbase:noisiness_output_noisiness a  vamp:DenseOutput ;
 plugbase:nonzero_count a   vamp:Plugin ;
     dc:title              "Non-zero count" ;
     vamp:name             "Non-zero count" ;
-    dc:description        "Extract the number of non-zero elements in an input spectrum" ;
+    dc:description        """Extract the number of non-zero elements in an input spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "nonzero_count" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -724,8 +740,9 @@ plugbase:nonzero_count_output_nonzero_count a  vamp:DenseOutput ;
 plugbase:odd_even_ratio a   vamp:Plugin ;
     dc:title              "Odd/even Harmonic Ratio" ;
     vamp:name             "Odd/even Harmonic Ratio" ;
-    dc:description        "Extract the odd-to-even harmonic ratio of an audio spectrum" ;
+    dc:description        """Extract the odd-to-even harmonic ratio of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "odd_even_ratio" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -773,8 +790,9 @@ plugbase:odd_even_ratio_output_odd_even_ratio a  vamp:DenseOutput ;
 plugbase:peak_spectrum a   vamp:Plugin ;
     dc:title              "Peak Spectrum" ;
     vamp:name             "Peak Spectrum" ;
-    dc:description        "Extract the spectral peaks from an audio spectrum" ;
+    dc:description        """Extract the spectral peaks from an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "peak_spectrum" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -811,14 +829,14 @@ plugbase:peak_spectrum_output_amplitudes a  vamp:DenseOutput ;
 plugbase:rms_amplitude a   vamp:Plugin ;
     dc:title              "RMS Amplitude" ;
     vamp:name             "RMS Amplitude" ;
-    dc:description        "Extract the RMS amplitude of an audio signal" ;
+    dc:description        """Extract the RMS amplitude of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "rms_amplitude" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:rms_amplitude_output_rms_amplitude ;
     .
 plugbase:rms_amplitude_output_rms_amplitude a  vamp:DenseOutput ;
@@ -836,8 +854,9 @@ plugbase:rms_amplitude_output_rms_amplitude a  vamp:DenseOutput ;
 plugbase:rolloff a   vamp:Plugin ;
     dc:title              "Spectral Rolloff" ;
     vamp:name             "Spectral Rolloff" ;
-    dc:description        "Extract the rolloff point of an audio spectrum" ;
+    dc:description        """Extract the rolloff point of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Bee Suan Ong (2005). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "rolloff" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -874,8 +893,9 @@ plugbase:rolloff_output_rolloff a  vamp:DenseOutput ;
 plugbase:sharpness a   vamp:Plugin ;
     dc:title              "Spectral Sharpness" ;
     vamp:name             "Spectral Sharpness" ;
-    dc:description        "Extract the spectral sharpness of an audio spectrum" ;
+    dc:description        """Extract the spectral sharpness of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "sharpness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -899,8 +919,9 @@ plugbase:sharpness_output_sharpness a  vamp:DenseOutput ;
 plugbase:skewness a   vamp:Plugin ;
     dc:title              "Skewness" ;
     vamp:name             "Skewness" ;
-    dc:description        "Extract the skewness of a range of values" ;
+    dc:description        """Extract the skewness of a range of values""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "skewness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -924,8 +945,9 @@ plugbase:skewness_output_skewness a  vamp:DenseOutput ;
 plugbase:smoothness a   vamp:Plugin ;
     dc:title              "Spectral Smoothness" ;
     vamp:name             "Spectral Smoothness" ;
-    dc:description        "Extract the spectral smoothness of an audio spectrum" ;
+    dc:description        """Extract the spectral smoothness of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from McAdams (1999). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "smoothness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -949,8 +971,9 @@ plugbase:smoothness_output_smoothness a  vamp:DenseOutput ;
 plugbase:spectral_average_deviation a   vamp:Plugin ;
     dc:title              "Spectral Average Deviation" ;
     vamp:name             "Spectral Average Deviation" ;
-    dc:description        "Extract the average deviation of an audio spectrum" ;
+    dc:description        """Extract the average deviation of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_average_deviation" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -974,8 +997,9 @@ plugbase:spectral_average_deviation_output_spectral_average_deviation a  vamp:De
 plugbase:spectral_centroid a   vamp:Plugin ;
     dc:title              "Spectral Centroid" ;
     vamp:name             "Spectral Centroid" ;
-    dc:description        "Extract the spectral centroid of an audio spectrum" ;
+    dc:description        """Extract the spectral centroid of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_centroid" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -999,8 +1023,9 @@ plugbase:spectral_centroid_output_spectral_centroid a  vamp:DenseOutput ;
 plugbase:spectral_inharmonicity a   vamp:Plugin ;
     dc:title              "Inharmonicity" ;
     vamp:name             "Inharmonicity" ;
-    dc:description        "Extract the inharmonicity of an audio spectrum" ;
+    dc:description        """Extract the inharmonicity of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_inharmonicity" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1037,8 +1062,9 @@ plugbase:spectral_inharmonicity_output_spectral_inharmonicity a  vamp:DenseOutpu
 plugbase:spectral_kurtosis a   vamp:Plugin ;
     dc:title              "Spectral Kurtosis" ;
     vamp:name             "Spectral Kurtosis" ;
-    dc:description        "Extract the kurtosis of an audio spectrum" ;
+    dc:description        """Extract the kurtosis of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_kurtosis" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1062,8 +1088,9 @@ plugbase:spectral_kurtosis_output_spectral_kurtosis a  vamp:DenseOutput ;
 plugbase:spectral_skewness a   vamp:Plugin ;
     dc:title              "Spectral Skewness" ;
     vamp:name             "Spectral Skewness" ;
-    dc:description        "Extract the skewness of an audio spectrum" ;
+    dc:description        """Extract the skewness of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_skewness" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1087,8 +1114,9 @@ plugbase:spectral_skewness_output_spectral_skewness a  vamp:DenseOutput ;
 plugbase:spectral_slope a   vamp:Plugin ;
     dc:title              "Spectral Slope" ;
     vamp:name             "Spectral Slope" ;
-    dc:description        "Extract the spectral slope of an audio spectrum" ;
+    dc:description        """Extract the spectral slope of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_slope" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1112,8 +1140,9 @@ plugbase:spectral_slope_output_spectral_slope a  vamp:DenseOutput ;
 plugbase:spectral_standard_deviation a   vamp:Plugin ;
     dc:title              "Spectral Standard Deviation" ;
     vamp:name             "Spectral Standard Deviation" ;
-    dc:description        "Extract the standard deviation of an audio spectrum" ;
+    dc:description        """Extract the standard deviation of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_standard_deviation" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1137,8 +1166,9 @@ plugbase:spectral_standard_deviation_output_spectral_standard_deviation a  vamp:
 plugbase:spectral_variance a   vamp:Plugin ;
     dc:title              "Spectral Variance" ;
     vamp:name             "Spectral Variance" ;
-    dc:description        "Extract the variance of an audio spectrum" ;
+    dc:description        """Extract the variance of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectral_variance" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1162,14 +1192,14 @@ plugbase:spectral_variance_output_spectral_variance a  vamp:DenseOutput ;
 plugbase:spectrum a   vamp:Plugin ;
     dc:title              "Spectrum" ;
     vamp:name             "Spectrum" ;
-    dc:description        "Extract the spectrum of an audio signal" ;
+    dc:description        """Extract the spectrum of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spectrum" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:spectrum_output_amplitudes ;
     .
 plugbase:spectrum_output_amplitudes a  vamp:DenseOutput ;
@@ -1187,8 +1217,9 @@ plugbase:spectrum_output_amplitudes a  vamp:DenseOutput ;
 plugbase:spread a   vamp:Plugin ;
     dc:title              "Spectral Spread" ;
     vamp:name             "Spectral Spread" ;
-    dc:description        "Extract the spectral spread of an audio spectrum" ;
+    dc:description        """Extract the spectral spread of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Norman Casagrande (2005). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "spread" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1212,8 +1243,9 @@ plugbase:spread_output_spread a  vamp:DenseOutput ;
 plugbase:standard_deviation a   vamp:Plugin ;
     dc:title              "Standard Deviation" ;
     vamp:name             "Standard Deviation" ;
-    dc:description        "Extract the standard deviation of a range of values" ;
+    dc:description        """Extract the standard deviation of a range of values""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "standard_deviation" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1237,8 +1269,9 @@ plugbase:standard_deviation_output_standard_deviation a  vamp:DenseOutput ;
 plugbase:sum a   vamp:Plugin ;
     dc:title              "Sum of Values" ;
     vamp:name             "Sum of Values" ;
-    dc:description        "Extract the sum of the values in a given range" ;
+    dc:description        """Extract the sum of the values in a given range""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "sum" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1262,8 +1295,9 @@ plugbase:sum_output_sum a  vamp:DenseOutput ;
 plugbase:tonality a   vamp:Plugin ;
     dc:title              "Tonality" ;
     vamp:name             "Tonality" ;
-    dc:description        "Extract the tonality an audio spectrum" ;
+    dc:description        """Extract the tonality an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from J. D. Johnston (1988). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tonality" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1287,8 +1321,9 @@ plugbase:tonality_output_tonality a  vamp:DenseOutput ;
 plugbase:tristimulus_1 a   vamp:Plugin ;
     dc:title              "Tristimulus I" ;
     vamp:name             "Tristimulus I" ;
-    dc:description        "Extract the tristimulus (type I) of an audio spectrum" ;
+    dc:description        """Extract the tristimulus (type I) of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Pollard and Jansson (1982). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tristimulus_1" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1336,8 +1371,9 @@ plugbase:tristimulus_1_output_tristimulus_1 a  vamp:DenseOutput ;
 plugbase:tristimulus_2 a   vamp:Plugin ;
     dc:title              "Tristimulus II" ;
     vamp:name             "Tristimulus II" ;
-    dc:description        "Extract the tristimulus (type II) of an audio spectrum" ;
+    dc:description        """Extract the tristimulus (type II) of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Pollard and Jansson (1982). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tristimulus_2" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1385,8 +1421,9 @@ plugbase:tristimulus_2_output_tristimulus_2 a  vamp:DenseOutput ;
 plugbase:tristimulus_3 a   vamp:Plugin ;
     dc:title              "Tristimulus III" ;
     vamp:name             "Tristimulus III" ;
-    dc:description        "Extract the tristimulus (type III) of an audio spectrum" ;
+    dc:description        """Extract the tristimulus (type III) of an audio spectrum""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Method from Pollard and Jansson (1982). Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tristimulus_3" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1434,8 +1471,9 @@ plugbase:tristimulus_3_output_tristimulus_3 a  vamp:DenseOutput ;
 plugbase:variance a   vamp:Plugin ;
     dc:title              "Variance" ;
     vamp:name             "Variance" ;
-    dc:description        "Extract the variance of a range of values" ;
+    dc:description        """Extract the variance of a range of values""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "variance" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -1459,14 +1497,14 @@ plugbase:variance_output_variance a  vamp:DenseOutput ;
 plugbase:zcr a   vamp:Plugin ;
     dc:title              "Zero Crossing Rate" ;
     vamp:name             "Zero Crossing Rate" ;
-    dc:description        "Extract the zero crossing rate of an audio signal" ;
+    dc:description        """Extract the zero crossing rate of an audio signal""" ;
     foaf:maker            [ foaf:name "libxtract by Jamie Bullock (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    vamp:copyright_note   """Copyright 2006 Jamie Bullock, plugin Copyright 2006 Queen Mary, University of London. Distributed under the GNU General Public License""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "zcr" ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-
     vamp:output      plugbase:zcr_output_zcr ;
     .
 plugbase:zcr_output_zcr a  vamp:DenseOutput ;
