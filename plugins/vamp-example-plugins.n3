@@ -19,6 +19,7 @@
     vamp:available_plugin plugbase:amplitudefollower ; 
     vamp:available_plugin plugbase:fixedtempo ; 
     vamp:available_plugin plugbase:percussiononsets ; 
+    vamp:available_plugin plugbase:powerspectrum ; 
     vamp:available_plugin plugbase:spectralcentroid ; 
     vamp:available_plugin plugbase:zerocrossing ; 
     .
