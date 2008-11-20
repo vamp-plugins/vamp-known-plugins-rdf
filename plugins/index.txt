@@ -6,5 +6,6 @@ http://www.vamp-plugins.org/rdf/plugins/mazurka-plugins
 http://www.vamp-plugins.org/rdf/plugins/vamp-aubio
 http://www.vamp-plugins.org/rdf/plugins/match-vamp-plugin
 http://www.vamp-plugins.org/rdf/plugins/vamp-onsetsds
+http://www.vamp-plugins.org/rdf/plugins/mvamp
 
 
