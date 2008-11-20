@@ -38,10 +38,10 @@ plugbase:marsyas_bextract_centroid a   vamp:Plugin ;
     vamp:vamp_API_version vamp:api_version_1 ;
     owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
-    vamp:output      plugbase:marsyas_bextract_centroid_output_centroid value ;
+    vamp:output      plugbase:marsyas_bextract_centroid_output_centroid_value ;
     .
-plugbase:marsyas_bextract_centroid_output_centroid value a  vamp:DenseOutput ;
-    vamp:identifier       "centroid value" ;
+plugbase:marsyas_bextract_centroid_output_centroid_value a  vamp:DenseOutput ;
+    vamp:identifier       "centroid_value" ;
     dc:title              "Centroid value" ;
     dc:description        "The value of the centroid"  ;
     vamp:fixed_bin_count  "true" ;
