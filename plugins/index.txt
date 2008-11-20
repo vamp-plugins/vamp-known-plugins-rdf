@@ -2,4 +2,9 @@ http://www.vamp-plugins.org/rdf/plugins/vamp-example-plugins
 http://www.vamp-plugins.org/rdf/plugins/ofa-vamp-plugin
 http://www.vamp-plugins.org/rdf/plugins/vamp-libxtract
 http://www.vamp-plugins.org/rdf/plugins/qm-vamp-plugins
+http://www.vamp-plugins.org/rdf/plugins/mazurka-plugins
+http://www.vamp-plugins.org/rdf/plugins/vamp-aubio
+http://www.vamp-plugins.org/rdf/plugins/match-vamp-plugin
+http://www.vamp-plugins.org/rdf/plugins/vamp-onsetsds
+
 
