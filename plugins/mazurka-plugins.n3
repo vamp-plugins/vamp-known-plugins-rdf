@@ -459,8 +459,7 @@ plugbase:mzpowercurve_param_window a  vamp:QuantizedParameter ;
     .
 plugbase:mzpowercurve_param_smoothingfactor a  vamp:Parameter ;
     vamp:identifier     "smoothingfactor" ;
-    dc:title            "Smoothing
-  (outputs 2-4)" ;
+    dc:title            "Smoothing (outputs 2-4)" ;
     dc:format           "" ;
     vamp:min_value       -1 ;
     vamp:max_value       1 ;
@@ -470,8 +469,7 @@ plugbase:mzpowercurve_param_smoothingfactor a  vamp:Parameter ;
     .
 plugbase:mzpowercurve_param_filtermethod a  vamp:QuantizedParameter ;
     vamp:identifier     "filtermethod" ;
-    dc:title            "Filter method
-  (outputs 2-4)" ;
+    dc:title            "Filter method (outputs 2-4)" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       2 ;
