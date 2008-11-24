@@ -590,8 +590,7 @@ plugbase:mzspectralflux_param_fluxtype a  vamp:QuantizedParameter ;
     .
 plugbase:mzspectralflux_param_smooth a  vamp:Parameter ;
     vamp:identifier     "smooth" ;
-    dc:title            "Spectral
-Smoothing" ;
+    dc:title            "Spectral Smoothing" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       1 ;
@@ -611,8 +610,7 @@ plugbase:mzspectralflux_param_pnorm a  vamp:Parameter ;
     .
 plugbase:mzspectralflux_param_spectrum a  vamp:QuantizedParameter ;
     vamp:identifier     "spectrum" ;
-    dc:title            "Magnitude
-Spectrum" ;
+    dc:title            "Magnitude Spectrum" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       3 ;
@@ -623,8 +621,7 @@ Spectrum" ;
     .
 plugbase:mzspectralflux_param_delta a  vamp:Parameter ;
     vamp:identifier     "delta" ;
-    dc:title            "Local Mean
-Threshold" ;
+    dc:title            "Local Mean Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       100 ;
@@ -634,8 +631,7 @@ Threshold" ;
     .
 plugbase:mzspectralflux_param_alpha a  vamp:Parameter ;
     vamp:identifier     "alpha" ;
-    dc:title            "Exponential
-Decay Factor" ;
+    dc:title            "Exponential Decay Factor" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       0.999 ;
@@ -770,8 +766,7 @@ plugbase:mzspectralreflux_param_stepsamples a  vamp:QuantizedParameter ;
     .
 plugbase:mzspectralreflux_param_recordingtype a  vamp:QuantizedParameter ;
     vamp:identifier     "recordingtype" ;
-    dc:title            "Historic
-Recording" ;
+    dc:title            "Historic Recording" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       1 ;
@@ -782,8 +777,7 @@ Recording" ;
     .
 plugbase:mzspectralreflux_param_delta a  vamp:Parameter ;
     vamp:identifier     "delta" ;
-    dc:title            "Local Mean
-Threshold" ;
+    dc:title            "Local Mean Threshold" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       100 ;
@@ -793,8 +787,7 @@ Threshold" ;
     .
 plugbase:mzspectralreflux_param_alpha2 a  vamp:Parameter ;
     vamp:identifier     "alpha2" ;
-    dc:title            "Exponential
-Decay Factor" ;
+    dc:title            "Exponential Decay Factor" ;
     dc:format           "" ;
     vamp:min_value       0 ;
     vamp:max_value       0.999 ;
