@@ -1,0 +1,36 @@
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix plugbase: <http://vamp-plugins.org/rdf/plugins/mvamp#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix af:       <http://purl.org/ontology/af/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix cc:       <http://web.resource.org/cc/> .
+@prefix :         <#> .
+
+<>  a   vamp:PluginDescription ;
+    foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
+    foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/mvamp-ibt> .
+
+:mvamp a  vamp:PluginLibrary ;
+    vamp:identifier "mvamp-ibt"  ; 
+    vamp:available_plugin plugbase:marsyas_ibt ; 
+#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    .
+
+plugbase:marsyas_ibt a   vamp:Plugin ;
+    dc:title              "IBT - INESC Beat Tracker" ;
+    vamp:name             "IBT - INESC Beat Tracker" ;
+    dc:description        """Estimates beat locations and tempo (off-line [default] and on-line modes of operation)""" ;
+    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    dc:rights             """GPL v3 license""" ;
+#   cc:license            <Place plugin license URI here and uncomment> ; 
+    vamp:identifier       "marsyas_ibt" ;
+    vamp:vamp_API_version vamp:api_version_1 ;
+    owl:versionInfo       "2" ;
+    vamp:input_domain     vamp:TimeDomain ;
+    vamp:output      plugbase:marsyas_ibt_output_beats_tempo ;
+    .
+
+
