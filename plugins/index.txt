@@ -8,4 +8,5 @@ http://www.vamp-plugins.org/rdf/plugins/match-vamp-plugin
 http://www.vamp-plugins.org/rdf/plugins/vamp-onsetsds
 http://www.vamp-plugins.org/rdf/plugins/mvamp
 http://www.vamp-plugins.org/rdf/plugins/nnls-chroma
+http://www.vamp-plugins.org/rdf/plugins/mvamp-ibt
 
