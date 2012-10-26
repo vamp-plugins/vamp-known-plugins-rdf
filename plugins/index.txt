@@ -10,4 +10,4 @@ http://www.vamp-plugins.org/rdf/plugins/mvamp
 http://www.vamp-plugins.org/rdf/plugins/nnls-chroma
 http://www.vamp-plugins.org/rdf/plugins/mvamp-ibt
 http://www.vamp-plugins.org/rdf/plugins/mtg-melodia
-
+http://www.vamp-plugins.org/rdf/plugins/vamp-hpcp-mtg
