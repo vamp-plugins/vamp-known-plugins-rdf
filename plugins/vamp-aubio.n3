@@ -32,7 +32,7 @@ plugbase:aubionotes a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubionotes" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "3" ;
+    owl:versionInfo       "4" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubionotes_param_onsettype ;
@@ -43,6 +43,7 @@ plugbase:aubionotes a   vamp:Plugin ;
     vamp:parameter   plugbase:aubionotes_param_avoidleaps ;
     vamp:parameter   plugbase:aubionotes_param_peakpickthreshold ;
     vamp:parameter   plugbase:aubionotes_param_silencethreshold ;
+    vamp:parameter   plugbase:aubionotes_param_minioi ;
 
     vamp:output      plugbase:aubionotes_output_notes ;
     .
@@ -51,11 +52,11 @@ plugbase:aubionotes_param_onsettype a  vamp:QuantizedParameter ;
     dc:title            "Onset Detection Function Type" ;
     dc:format           "" ;
     vamp:min_value       0 ;
-    vamp:max_value       6 ;
+    vamp:max_value       7 ;
     vamp:unit           "" ;
     vamp:quantize_step   1  ;
     vamp:default_value   3 ;
-    vamp:value_names     ( "Energy Based" "Spectral Difference" "High-Frequency Content" "Complex Domain" "Phase Deviation" "Kullback-Liebler" "Modified Kullback-Liebler");
+    vamp:value_names     ( "Energy Based" "Spectral Difference" "High-Frequency Content" "Complex Domain" "Phase Deviation" "Kullback-Liebler" "Modified Kullback-Liebler" "Spectral Flux");
     .
 plugbase:aubionotes_param_pitchtype a  vamp:QuantizedParameter ;
     vamp:identifier     "pitchtype" ;
@@ -129,13 +130,24 @@ plugbase:aubionotes_param_silencethreshold a  vamp:Parameter ;
     vamp:min_value       -120 ;
     vamp:max_value       0 ;
     vamp:unit           "dB"  ;
-    vamp:default_value   -90 ;
+    vamp:default_value   -70 ;
+    vamp:value_names     ();
+    .
+plugbase:aubionotes_param_minioi a  vamp:QuantizedParameter ;
+    vamp:identifier     "minioi" ;
+    dc:title            "Minimum Inter-Onset Interval" ;
+    dc:format           "ms" ;
+    vamp:min_value       0 ;
+    vamp:max_value       40 ;
+    vamp:unit           "ms" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   4 ;
     vamp:value_names     ();
     .
 plugbase:aubionotes_output_notes a  vamp:SparseOutput ;
     vamp:identifier       "notes" ;
     dc:title              "Notes" ;
-    dc:description        ""  ;
+    dc:description        """"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "Hz" ;
     vamp:bin_count        2 ;
@@ -154,26 +166,26 @@ plugbase:aubioonset a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubioonset" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "1" ;
+    owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubioonset_param_onsettype ;
     vamp:parameter   plugbase:aubioonset_param_peakpickthreshold ;
     vamp:parameter   plugbase:aubioonset_param_silencethreshold ;
+    vamp:parameter   plugbase:aubioonset_param_minioi ;
 
     vamp:output      plugbase:aubioonset_output_onsets ;
-    vamp:output      plugbase:aubioonset_output_detectionfunction ;
     .
 plugbase:aubioonset_param_onsettype a  vamp:QuantizedParameter ;
     vamp:identifier     "onsettype" ;
     dc:title            "Onset Detection Function Type" ;
     dc:format           "" ;
     vamp:min_value       0 ;
-    vamp:max_value       6 ;
+    vamp:max_value       7 ;
     vamp:unit           "" ;
     vamp:quantize_step   1  ;
     vamp:default_value   3 ;
-    vamp:value_names     ( "Energy Based" "Spectral Difference" "High-Frequency Content" "Complex Domain" "Phase Deviation" "Kullback-Liebler" "Modified Kullback-Liebler");
+    vamp:value_names     ( "Energy Based" "Spectral Difference" "High-Frequency Content" "Complex Domain" "Phase Deviation" "Kullback-Liebler" "Modified Kullback-Liebler" "Spectral Flux");
     .
 plugbase:aubioonset_param_peakpickthreshold a  vamp:Parameter ;
     vamp:identifier     "peakpickthreshold" ;
@@ -192,28 +204,28 @@ plugbase:aubioonset_param_silencethreshold a  vamp:Parameter ;
     vamp:min_value       -120 ;
     vamp:max_value       0 ;
     vamp:unit           "dB"  ;
-    vamp:default_value   -90 ;
+    vamp:default_value   -70 ;
+    vamp:value_names     ();
+    .
+plugbase:aubioonset_param_minioi a  vamp:QuantizedParameter ;
+    vamp:identifier     "minioi" ;
+    dc:title            "Minimum Inter-Onset Interval" ;
+    dc:format           "ms" ;
+    vamp:min_value       0 ;
+    vamp:max_value       40 ;
+    vamp:unit           "ms" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   4 ;
     vamp:value_names     ();
     .
 plugbase:aubioonset_output_onsets a  vamp:SparseOutput ;
     vamp:identifier       "onsets" ;
     dc:title              "Onsets" ;
-    dc:description        ""  ;
+    dc:description        """"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
     vamp:bin_count        0 ;
     vamp:sample_type      vamp:VariableSampleRate ;
-#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
-#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
-#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
-    .
-plugbase:aubioonset_output_detectionfunction a  vamp:DenseOutput ;
-    vamp:identifier       "detectionfunction" ;
-    dc:title              "Onset Detection Function" ;
-    dc:description        ""  ;
-    vamp:fixed_bin_count  "true" ;
-    vamp:unit             "" ;
-    vamp:bin_count        1 ;
 #   vamp:computes_event_type   <Place event type URI here and uncomment> ;
 #   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
 #   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
@@ -227,7 +239,7 @@ plugbase:aubiopitch a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubiopitch" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "2" ;
+    owl:versionInfo       "3" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiopitch_param_pitchtype ;
@@ -293,7 +305,7 @@ plugbase:aubiopitch_param_silencethreshold a  vamp:Parameter ;
 plugbase:aubiopitch_output_frequency a  vamp:SparseOutput ;
     vamp:identifier       "frequency" ;
     dc:title              "Fundamental Frequency" ;
-    dc:description        ""  ;
+    dc:description        """"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "Hz" ;
     vamp:bin_count        1 ;
@@ -311,7 +323,7 @@ plugbase:aubiosilence a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubiosilence" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "3" ;
+    owl:versionInfo       "4" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiosilence_param_silencethreshold ;
@@ -333,7 +345,7 @@ plugbase:aubiosilence_param_silencethreshold a  vamp:Parameter ;
 plugbase:aubiosilence_output_silent a  vamp:SparseOutput ;
     vamp:identifier       "silent" ;
     dc:title              "Silent Regions" ;
-    dc:description        "Return an interval covering each silent region"  ;
+    dc:description        """Return an interval covering each silent region"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
     vamp:bin_count        0 ;
@@ -345,7 +357,7 @@ plugbase:aubiosilence_output_silent a  vamp:SparseOutput ;
 plugbase:aubiosilence_output_noisy a  vamp:SparseOutput ;
     vamp:identifier       "noisy" ;
     dc:title              "Non-Silent Regions" ;
-    dc:description        "Return an interval covering each non-silent region"  ;
+    dc:description        """Return an interval covering each non-silent region"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
     vamp:bin_count        0 ;
@@ -357,7 +369,7 @@ plugbase:aubiosilence_output_noisy a  vamp:SparseOutput ;
 plugbase:aubiosilence_output_silencelevel a  vamp:SparseOutput ;
     vamp:identifier       "silencelevel" ;
     dc:title              "Silence Test" ;
-    dc:description        "Return a function that switches from 1 to 0 when silence falls, and back again when it ends"  ;
+    dc:description        """Return a function that switches from 1 to 0 when silence falls, and back again when it ends"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
     a                     vamp:QuantizedOutput ;
@@ -372,15 +384,15 @@ plugbase:aubiosilence_output_silencelevel a  vamp:SparseOutput ;
 #   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
     .
 plugbase:aubiotempo a   vamp:Plugin ;
-    dc:title              "Aubio Tempo Detector" ;
-    vamp:name             "Aubio Tempo Detector" ;
+    dc:title              "Aubio Beat Tracker" ;
+    vamp:name             "Aubio Beat Tracker" ;
     dc:description        """Estimate the musical tempo and track beat positions""" ;
     foaf:maker            [ foaf:name "Paul Brossier (method by Matthew Davies, plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubiotempo" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "1" ;
+    owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiotempo_param_onsettype ;
@@ -388,17 +400,18 @@ plugbase:aubiotempo a   vamp:Plugin ;
     vamp:parameter   plugbase:aubiotempo_param_silencethreshold ;
 
     vamp:output      plugbase:aubiotempo_output_beats ;
+    vamp:output      plugbase:aubiotempo_output_tempo ;
     .
 plugbase:aubiotempo_param_onsettype a  vamp:QuantizedParameter ;
     vamp:identifier     "onsettype" ;
     dc:title            "Onset Detection Function Type" ;
     dc:format           "" ;
     vamp:min_value       0 ;
-    vamp:max_value       6 ;
+    vamp:max_value       7 ;
     vamp:unit           "" ;
     vamp:quantize_step   1  ;
     vamp:default_value   3 ;
-    vamp:value_names     ( "Energy Based" "Spectral Difference" "High-Frequency Content" "Complex Domain" "Phase Deviation" "Kullback-Liebler" "Modified Kullback-Liebler");
+    vamp:value_names     ( "Energy Based" "Spectral Difference" "High-Frequency Content" "Complex Domain" "Phase Deviation" "Kullback-Liebler" "Modified Kullback-Liebler" "Spectral Flux");
     .
 plugbase:aubiotempo_param_peakpickthreshold a  vamp:Parameter ;
     vamp:identifier     "peakpickthreshold" ;
@@ -417,13 +430,13 @@ plugbase:aubiotempo_param_silencethreshold a  vamp:Parameter ;
     vamp:min_value       -120 ;
     vamp:max_value       0 ;
     vamp:unit           "dB"  ;
-    vamp:default_value   -90 ;
+    vamp:default_value   -70 ;
     vamp:value_names     ();
     .
 plugbase:aubiotempo_output_beats a  vamp:SparseOutput ;
     vamp:identifier       "beats" ;
     dc:title              "Beats" ;
-    dc:description        ""  ;
+    dc:description        """"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
     vamp:bin_count        0 ;
@@ -432,4 +445,15 @@ plugbase:aubiotempo_output_beats a  vamp:SparseOutput ;
 #   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
 #   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
     .
-
+plugbase:aubiotempo_output_tempo a  vamp:DenseOutput ;
+    vamp:identifier       "tempo" ;
+    dc:title              "Tempo" ;
+    dc:description        """"""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "bpm" ;
+    vamp:bin_count        1 ;
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> 
+;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
