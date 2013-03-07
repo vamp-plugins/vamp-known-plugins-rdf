@@ -453,7 +453,6 @@ plugbase:aubiotempo_output_tempo a  vamp:DenseOutput ;
     vamp:unit             "bpm" ;
     vamp:bin_count        1 ;
 #   vamp:computes_event_type   <Place event type URI here and uncomment> ;
-#   vamp:computes_feature      <Place feature attribute URI here and uncomment> 
-;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
 #   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
     .

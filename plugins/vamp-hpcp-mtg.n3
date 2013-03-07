@@ -24,7 +24,7 @@ plugbase:MTG-HPCP a   vamp:Plugin ;
     vamp:name             "HPCP" ;
     dc:description        """Return the instantaneous evolution of HPCP (Harmonic Pitch Class Profile) of a signal.""" ;
     foaf:maker            [ foaf:name "Music Technology Group, Universitat Pompeu Fabra" ] ; # FIXME could give plugin author's URI here
-    dc:rights             """© Copyright 2012 Music Technology Group, Universitat Pompeu Fabra. All Rights Reserved.
+    dc:rights             """Copyright 2012 Music Technology Group, Universitat Pompeu Fabra. All Rights Reserved.
 Method described in
   E. Gomez, Tonal description of music audio signals
   Ph.D. dissertation, MTG
