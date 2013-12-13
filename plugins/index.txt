@@ -12,4 +12,6 @@ http://www.vamp-plugins.org/rdf/plugins/mvamp-ibt
 http://www.vamp-plugins.org/rdf/plugins/mtg-melodia
 http://www.vamp-plugins.org/rdf/plugins/vamp-hpcp-mtg
 http://www.vamp-plugins.org/rdf/plugins/bbc-vamp-plugins
-
+http://www.vamp-plugins.org/rdf/plugins/beatroot-vamp
+http://www.vamp-plugins.org/rdf/plugins/pyin
+http://www.vamp-plugins.org/rdf/plugins/segmentino
