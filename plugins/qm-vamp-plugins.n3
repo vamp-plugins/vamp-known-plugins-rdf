@@ -13,7 +13,7 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins> .
 
-:qm-vamp-plugins a  vamp:PluginLibrary ;
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "qm-vamp-plugins"  ; 
     vamp:available_plugin plugbase:qm-chromagram ; 
     vamp:available_plugin plugbase:qm-constantq ; 

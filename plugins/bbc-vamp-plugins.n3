@@ -13,8 +13,9 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins> .
 
-:bbc-vamp-plugins a  vamp:PluginLibrary ;
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "bbc-vamp-plugins"  ; 
+    dc:title "BBC Vamp Plugins"  ; 
     vamp:available_plugin plugbase:bbc-energy ; 
     vamp:available_plugin plugbase:bbc-intensity ; 
     vamp:available_plugin plugbase:bbc-rhythm ; 
