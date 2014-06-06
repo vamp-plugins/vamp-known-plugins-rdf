@@ -1,0 +1,15 @@
+
+@prefix qm: <http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#> .
+
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix :         <#> .
+
+qm:library     dc:title "Queen Mary plugin set" ;
+	       dc:description """Plugins from the Centre for Digital Music at Queen Mary, University of London""" ;
+	       foaf:maker [ 
+	           foaf:page <http://c4dm.eecs.qmul.ac.uk/> ;
+		   foaf:logo <http://sonicvisualiser.org/images/qm-logo.png>
+               ] . 
+
