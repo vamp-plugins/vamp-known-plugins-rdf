@@ -14,6 +14,7 @@ qm:library     dc:title "Queen Mary plugin set" ;
 	       vamp:has_binary "linux64" ;
 	       vamp:has_binary "win32" ;
 	       vamp:has_source "true" ;
-	       doap:download-page <http://isophonics.net/QMVampPlugins>
-                . 
-
+	       doap:download-page <http://isophonics.net/QMVampPlugins> ;
+	       foaf:maker [
+	           foaf:logo <http://sonicvisualiser.org/images/qm-logo.png>
+               ] .
