@@ -16,5 +16,5 @@ qm:library     dc:title "Queen Mary plugin set" ;
 	       vamp:has_source "true" ;
 	       doap:download-page <http://isophonics.net/QMVampPlugins> ;
 	       foaf:maker [
-	           foaf:logo <http://sonicvisualiser.org/images/qm-logo.png>
+	           foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png>
                ] .
