@@ -22,6 +22,9 @@
     vamp:available_plugin plugbase:powerspectrum ; 
     vamp:available_plugin plugbase:spectralcentroid ; 
     vamp:available_plugin plugbase:zerocrossing ; 
+    foaf:maker            [ foaf:name "Vamp SDK Example Plugins" ] ;
+    dc:title "Vamp Example Plugins" ;
+    dc:description """Example plugins from the Vamp Plugin SDK"""
     .
 
 plugbase:amplitudefollower a   vamp:Plugin ;

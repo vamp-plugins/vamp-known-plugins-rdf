@@ -17,7 +17,11 @@
 :ofa-vamp-plugin a  vamp:PluginLibrary ;
     vamp:identifier "ofa-vamp-plugin" ; 
     vamp:available_plugin plugbase:ofa_fingerprint; 
-    vamp:available_plugin plugbase:ofa_puid .
+    vamp:available_plugin plugbase:ofa_puid ;
+    foaf:maker            [ foaf:name "Chris Cannam, using MusicIP OFA library" ] ;
+    dc:title "OFA Vamp Plugin" ;
+    dc:description "Plugin that performs audio fingerprinting and lookup using the MusicIP OFA library"
+    .
 
 plugbase:ofa_fingerprint a   vamp:Plugin ;
     dc:title              "MusicIP Audio Fingerprinter" ;
