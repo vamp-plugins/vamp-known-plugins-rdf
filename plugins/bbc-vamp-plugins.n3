@@ -7,29 +7,41 @@
 @prefix af:       <http://purl.org/ontology/af/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
 @prefix cc:       <http://web.resource.org/cc/> .
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix :         <#> .
 
 <>  a   vamp:PluginDescription ;
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins> .
 
+:maker 
+    foaf:name "BBC" ;
+    foaf:page "http://www.bbc.co.uk/" .
+
 plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "bbc-vamp-plugins"  ; 
     dc:title "BBC Vamp Plugins"  ; 
+    dc:description "A collection of audio feature extraction algorithms from BBC Research and Development" ;
+    foaf:page <https://github.com/bbcrd/bbc-vamp-plugins/blob/master/README.md> ;
+    doap:download-page <https://github.com/bbcrd/bbc-vamp-plugins/releases> ;
     vamp:available_plugin plugbase:bbc-energy ; 
     vamp:available_plugin plugbase:bbc-intensity ; 
     vamp:available_plugin plugbase:bbc-rhythm ; 
     vamp:available_plugin plugbase:bbc-spectral-contrast ; 
     vamp:available_plugin plugbase:bbc-spectral-flux ; 
     vamp:available_plugin plugbase:bbc-speechmusic-segmenter ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    vamp:has_source true ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "osx" 
     .
 
 plugbase:bbc-energy a   vamp:Plugin ;
     dc:title              "Energy" ;
     vamp:name             "Energy" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the RMS energy and low energy ratio of a signal""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-energy" ;
@@ -90,8 +102,8 @@ plugbase:bbc-energy_output_lowenergy a  vamp:SparseOutput ;
 plugbase:bbc-intensity a   vamp:Plugin ;
     dc:title              "Intensity" ;
     vamp:name             "Intensity" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the intensity of a signal and the intensity ratio for a number of sub-bands""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-intensity" ;
@@ -141,8 +153,8 @@ plugbase:bbc-intensity_output_intensity-ratio a  vamp:DenseOutput ;
 plugbase:bbc-rhythm a   vamp:Plugin ;
     dc:title              "Rhythm" ;
     vamp:name             "Rhythm" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates rhythmic features of a signal, including onsets and tempo """ ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-rhythm" ;
@@ -357,8 +369,8 @@ plugbase:bbc-rhythm_output_tempo a  vamp:SparseOutput ;
 plugbase:bbc-spectral-contrast a   vamp:Plugin ;
     dc:title              "Spectral Contrast" ;
     vamp:name             "Spectral Contrast" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the peak and valleys of the spectral contrast feature""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-spectral-contrast" ;
@@ -431,8 +443,8 @@ plugbase:bbc-spectral-contrast_output_mean a  vamp:DenseOutput ;
 plugbase:bbc-spectral-flux a   vamp:Plugin ;
     dc:title              "Spectral Flux" ;
     vamp:name             "Spectral Flux" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the spectral flux""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-spectral-flux" ;
@@ -470,8 +482,8 @@ plugbase:bbc-spectral-flux_output_spectral-flux a  vamp:DenseOutput ;
 plugbase:bbc-speechmusic-segmenter a   vamp:Plugin ;
     dc:title              "Speech/Music segmenter" ;
     vamp:name             "Speech/Music segmenter" ;
-    dc:description        """A simple speech/music segmenter""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates boundaries between speech and music""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2011 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-speechmusic-segmenter" ;
