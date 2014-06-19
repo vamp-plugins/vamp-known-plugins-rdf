@@ -52,6 +52,7 @@ plugbase:qm-adaptivespectrogram a   vamp:Plugin ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "1" ;
     vamp:input_domain     vamp:TimeDomain ;
+    foaf:page <http://vamp-plugins.org/plugin-doc/qm-vamp-plugins.html#qm-adaptivespectrogram> ;
 
     vamp:parameter   plugbase:qm-adaptivespectrogram_param_n ;
     vamp:parameter   plugbase:qm-adaptivespectrogram_param_w ;
@@ -122,6 +123,7 @@ plugbase:qm-barbeattracker a   vamp:Plugin ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "1" ;
     vamp:input_domain     vamp:TimeDomain ;
+    foaf:page <http://vamp-plugins.org/plugin-doc/qm-vamp-plugins.html#qm-barbeattracker> ;
 
     vamp:parameter   plugbase:qm-barbeattracker_param_bpb ;
 
@@ -380,6 +382,7 @@ plugbase:qm-dwt a   vamp:Plugin ;
     vamp:vamp_API_version vamp:api_version_2 ;
     owl:versionInfo       "1" ;
     vamp:input_domain     vamp:TimeDomain ;
+    foaf:page <http://vamp-plugins.org/plugin-doc/qm-vamp-plugins.html#qm-dwt> ;
 
     vamp:parameter   plugbase:qm-dwt_param_scales ;
     vamp:parameter   plugbase:qm-dwt_param_wavelet ;
