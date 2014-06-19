@@ -24,6 +24,16 @@ beatroot:library
 	vamp:has_binary "linux64" ;
 	vamp:has_binary "win32" .
 
+@prefix match: <http://vamp-plugins.org/rdf/plugins/match-vamp-plugin#> .
+
+match:library
+	doap:download-page <http://code.soundsoftware.ac.uk/projects/match-vamp/files> ;
+	vamp:has_source true ;
+	vamp:has_binary "osx" ;
+	vamp:has_binary "linux32" ;
+	vamp:has_binary "linux64" ;
+	vamp:has_binary "win32" .
+
 @prefix pyin: <http://vamp-plugins.org/rdf/plugins/pyin#> .
 
 pyin:library
@@ -34,5 +44,12 @@ pyin:library
 	vamp:has_binary "win32" ;
 	vamp:has_binary "osx" .
 
+@prefix aubio: <http://vamp-plugins.org/rdf/plugins/vamp-aubio#> .
 
-	
+aubio:library
+	doap:download-page <http://code.soundsoftware.ac.uk/projects/vamp-aubio-plugins/files/> ;
+	vamp:has_source true ;
+	vamp:has_binary "win32" ;
+	vamp:has_binary "osx" ;
+	vamp:has_binary "linux64" .
+

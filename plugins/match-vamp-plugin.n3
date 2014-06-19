@@ -13,17 +13,25 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/match-vamp-plugin> .
 
-:match-vamp-plugin a  vamp:PluginLibrary ;
+:maker
+    foaf:name "Queen Mary, University of London" ;
+    foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png> ;
+    foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
+
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "match-vamp-plugin"  ; 
+    dc:title "MATCH Vamp Plugin" ;
+    dc:description """Vamp implementation of the MATCH audio alignment algorithm from Simon Dixon. Sonic Visualiser can use this for automatic time alignment among multiple audio files.""" ;
     vamp:available_plugin plugbase:match ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    foaf:maker :maker ;
+    foaf:page <http://code.soundsoftware.ac.uk/projects/match-vamp> ;
     .
 
 plugbase:match a   vamp:Plugin ;
     dc:title              "Match Performance Aligner" ;
     vamp:name             "Match Performance Aligner" ;
     dc:description        """Calculate alignment between two performances in separate channel inputs""" ;
-    foaf:maker            [ foaf:name "Simon Dixon (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "match" ;

@@ -13,21 +13,27 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/vamp-aubio> .
 
-:vamp-aubio a  vamp:PluginLibrary ;
+:maker
+    foaf:name "Paul Brossier (plugin by Chris Cannam)" ;
+    foaf:page <http://aubio.org> .
+
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "vamp-aubio"  ; 
+    dc:title "Vamp Aubio plugins" ;
+    dc:description "Onset detection, pitch tracking, note tracking and tempo tracking plugins using Paul Brossier's aubio library" ;
     vamp:available_plugin plugbase:aubionotes ; 
     vamp:available_plugin plugbase:aubioonset ; 
     vamp:available_plugin plugbase:aubiopitch ; 
     vamp:available_plugin plugbase:aubiosilence ; 
     vamp:available_plugin plugbase:aubiotempo ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    foaf:page <https://code.soundsoftware.ac.uk/projects/vamp-aubio-plugins/> ;
     .
 
 plugbase:aubionotes a   vamp:Plugin ;
     dc:title              "Aubio Note Tracker" ;
     vamp:name             "Aubio Note Tracker" ;
     dc:description        """Estimate note onset positions, pitches and durations""" ;
-    foaf:maker            [ foaf:name "Paul Brossier (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubionotes" ;
@@ -161,7 +167,7 @@ plugbase:aubioonset a   vamp:Plugin ;
     dc:title              "Aubio Onset Detector" ;
     vamp:name             "Aubio Onset Detector" ;
     dc:description        """Estimate note onset times""" ;
-    foaf:maker            [ foaf:name "Paul Brossier (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubioonset" ;
@@ -234,7 +240,7 @@ plugbase:aubiopitch a   vamp:Plugin ;
     dc:title              "Aubio Pitch Detector" ;
     vamp:name             "Aubio Pitch Detector" ;
     dc:description        """Track estimated note pitches""" ;
-    foaf:maker            [ foaf:name "Paul Brossier (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubiopitch" ;
@@ -318,7 +324,7 @@ plugbase:aubiosilence a   vamp:Plugin ;
     dc:title              "Aubio Silence Detector" ;
     vamp:name             "Aubio Silence Detector" ;
     dc:description        """Detect levels below a certain threshold""" ;
-    foaf:maker            [ foaf:name "Paul Brossier (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubiosilence" ;
