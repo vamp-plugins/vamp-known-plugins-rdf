@@ -8,7 +8,7 @@
 @prefix qm: <http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#> .
 
 qm:library
-	vamp:has_source "true" ;
+	vamp:has_source true ;
 	vamp:has_binary "osx" ;
 	vamp:has_binary "linux32" ;
 	vamp:has_binary "linux64" ;
@@ -18,8 +18,21 @@ qm:library
 
 beatroot:library
 	doap:download-page <http://code.soundsoftware.ac.uk/projects/beatroot-vamp/files> ;
-	vamp:has_source "true" ;
+	vamp:has_source true ;
 	vamp:has_binary "osx" ;
 	vamp:has_binary "linux32" ;
 	vamp:has_binary "linux64" ;
 	vamp:has_binary "win32" .
+
+@prefix pyin: <http://vamp-plugins.org/rdf/plugins/pyin#> .
+
+pyin:library
+	doap:download-page <http://code.soundsoftware.ac.uk/projects/pyin/files> ;
+	vamp:has_source true ;
+	vamp:has_binary "linux32" ;
+	vamp:has_binary "linux64" ;
+	vamp:has_binary "win32" ;
+	vamp:has_binary "osx" .
+
+
+	
