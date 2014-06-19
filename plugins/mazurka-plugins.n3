@@ -26,7 +26,7 @@ plugbase:library a  vamp:PluginLibrary ;
     foaf:page <http://www.mazurka.org.uk/software/sv/plugin/> ;
     doap:download-page <http://www.mazurka.org.uk/software/sv/plugin/download/> ;
     vamp:has_binary "win32" ;
-    vamp:has_binary "linux" ;
+    vamp:has_binary "linux32" ;
     vamp:available_plugin plugbase:mzchronogram ; 
     vamp:available_plugin plugbase:mzharmonicspectrum ; 
     vamp:available_plugin plugbase:mznevermore ; 
