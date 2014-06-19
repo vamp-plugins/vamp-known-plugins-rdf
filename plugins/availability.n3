@@ -1,14 +1,25 @@
 
-@prefix qm: <http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#> .
-
 @prefix vamp:     <http://purl.org/ontology/vamp/> .
 @prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
 @prefix :         <#> .
 
-qm:library     vamp:has_binary "osx" ;
-	       vamp:has_binary "linux32" ;
-	       vamp:has_binary "linux64" ;
-	       vamp:has_binary "win32" ;
-	       vamp:has_source "true" .
+@prefix qm: <http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#> .
+
+qm:library
+	vamp:has_source "true" ;
+	vamp:has_binary "osx" ;
+	vamp:has_binary "linux32" ;
+	vamp:has_binary "linux64" ;
+	vamp:has_binary "win32" .
+
+@prefix beatroot: <http://vamp-plugins.org/rdf/plugins/beatroot-vamp#> .
+
+beatroot:library
+	doap:download-page <http://code.soundsoftware.ac.uk/projects/beatroot-vamp/files> ;
+	vamp:has_source "true" ;
+	vamp:has_binary "osx" ;
+	vamp:has_binary "linux32" ;
+	vamp:has_binary "linux64" ;
+	vamp:has_binary "win32" .

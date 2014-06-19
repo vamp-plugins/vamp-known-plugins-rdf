@@ -8,6 +8,7 @@
 <http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-spectral-contrast> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-spectral-flux> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-speechmusic-segmenter> vamp:category "Classification" .
+<http://vamp-plugins.org/rdf/plugins/beatroot-vamp#beatroot> vamp:category "Time > Tempo" .
 <http://vamp-plugins.org/rdf/plugins/cqvamp#cqvamp> vamp:category "Visualisation" .
 <http://vamp-plugins.org/rdf/plugins/match-vamp-plugin#match> vamp:category "Time > Alignment" .
 <http://vamp-plugins.org/rdf/plugins/nnls-chroma#chordino> vamp:category "Notes" .
