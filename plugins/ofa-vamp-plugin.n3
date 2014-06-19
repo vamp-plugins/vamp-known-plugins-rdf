@@ -14,20 +14,26 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/ofa-vamp-plugin#ofa-vamp-plugin> .
 
+:maker 
+    foaf:name "Queen Mary, University of London" ;
+    foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
+
 :ofa-vamp-plugin a  vamp:PluginLibrary ;
     vamp:identifier "ofa-vamp-plugin" ; 
     vamp:available_plugin plugbase:ofa_fingerprint; 
     vamp:available_plugin plugbase:ofa_puid ;
-    foaf:maker            [ foaf:name "Chris Cannam, using MusicIP OFA library" ] ;
+    foaf:maker            :maker ;
     dc:title "OFA Vamp Plugin" ;
-    dc:description "Plugin that performs audio fingerprinting and lookup using the MusicIP OFA library"
+    dc:description "Plugin that performed audio fingerprinting and lookup using the no-longer-supported MusicIP OFA library. This plugin is provided for interest only and is no longer practically useful." ;
+    foaf:page <http://code.soundsoftware.ac.uk/projects/ofa-vamp-plugin> ;
+    vamp:has_source true ;
     .
 
 plugbase:ofa_fingerprint a   vamp:Plugin ;
     dc:title              "MusicIP Audio Fingerprinter" ;
     vamp:name             "MusicIP Audio Fingerprinter" ;
     dc:description        "Calculates an audio fingerprint using the MusicIP OFA fingerprinting library" ;
-    foaf:maker            [ foaf:name "Chris Cannam, using MusicIP OFA library" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
 #    cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "ofa_fingerprint" ;
     vamp:vamp_API_version vamp:api_version_2 ;
@@ -53,7 +59,7 @@ plugbase:ofa_puid a   vamp:Plugin ;
     dc:title              "MusicIP PUID Lookup" ;
     vamp:name             "MusicIP PUID Lookup" ;
     dc:description        "Calculates an audio fingerprint using the MusicIP OFA fingerprinting library and uses it to look up a MusicDNS PUID" ;
-    foaf:maker            [ foaf:name "Chris Cannam, using MusicIP OFA library" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "ofa_puid" ;
     vamp:vamp_API_version vamp:api_version_2 ;

@@ -13,8 +13,15 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/mvamp> .
 
+:maker
+    foaf:name "Marsyas Plugins" ;
+    foaf:page <http://marsyas.info/> .
+
 :mvamp a  vamp:PluginLibrary ;
-    vamp:identifier "mvamp"  ; 
+    vamp:identifier "mvamp"  ;
+    dc:title "MARSYAS Vamp plugins" ;
+    dc:description "Low-level feature extraction plugins containing functionality from the MARSYAS batch feature extractor" ;
+    
     vamp:available_plugin plugbase:marsyas_bextract_centroid ; 
     vamp:available_plugin plugbase:marsyas_bextract_lpcc ; 
     vamp:available_plugin plugbase:marsyas_bextract_lsp ; 
@@ -23,15 +30,16 @@
     vamp:available_plugin plugbase:marsyas_bextract_scf ; 
     vamp:available_plugin plugbase:marsyas_bextract_sfm ; 
     vamp:available_plugin plugbase:marsyas_bextract_zero_crossings ; 
-    vamp:available_plugin plugbase:zerocrossing ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    vamp:has_source true ;
+    vamp:has_binary "linux32" ;
+    foaf:page <http://marsyas.info/download/vamp_plugins/> ;
     .
 
 plugbase:marsyas_bextract_centroid a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Centroid" ;
     vamp:name             "Marsyas - Batch Feature Extract - Centroid" ;
     dc:description        """Marsyas - Batch Feature Extract - Centroid""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_centroid" ;
@@ -55,7 +63,7 @@ plugbase:marsyas_bextract_lpcc a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Linear Prediction Cepstral Coefficients" ;
     vamp:name             "Marsyas - Batch Feature Extract - Linear Prediction Cepstral Coefficients" ;
     dc:description        """Marsyas - Batch Feature Extract - Linear Prediction Cepstral Coefficients""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_lpcc" ;
@@ -79,7 +87,7 @@ plugbase:marsyas_bextract_lsp a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Line Spectral Pairs" ;
     vamp:name             "Marsyas - Batch Feature Extract - Line Spectral Pairs" ;
     dc:description        """Marsyas - Batch Feature Extract - Line Spectral Pairs""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_lsp" ;
@@ -103,7 +111,7 @@ plugbase:marsyas_bextract_mfcc a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Mel-Frequency Cepstral Coefficients" ;
     vamp:name             "Marsyas - Batch Feature Extract - Mel-Frequency Cepstral Coefficients" ;
     dc:description        """Marsyas - Batch Feature Extract - Mel-Frequency Cepstral Coefficients""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_mfcc" ;
@@ -127,7 +135,7 @@ plugbase:marsyas_bextract_rolloff a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Spectral Rolloff" ;
     vamp:name             "Marsyas - Batch Feature Extract - Spectral Rolloff" ;
     dc:description        """Marsyas - Batch Feature Extract - Spectral Rolloff""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_rolloff" ;
@@ -151,7 +159,7 @@ plugbase:marsyas_bextract_scf a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Spectral Crest Factor" ;
     vamp:name             "Marsyas - Batch Feature Extract - Spectral Crest Factor" ;
     dc:description        """Marsyas - Batch Feature Extract - Spectral Crest Factor""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_scf" ;
@@ -175,7 +183,7 @@ plugbase:marsyas_bextract_sfm a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Spectral Flatness Measure" ;
     vamp:name             "Marsyas - Batch Feature Extract - Spectral Flatness Measure" ;
     dc:description        """Marsyas - Batch Feature Extract - Spectral Flatness Measure""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_sfm" ;
@@ -199,7 +207,7 @@ plugbase:marsyas_bextract_zero_crossings a   vamp:Plugin ;
     dc:title              "Marsyas - Batch Feature Extract - Zero Crossings" ;
     vamp:name             "Marsyas - Batch Feature Extract - Zero Crossings" ;
     dc:description        """Marsyas - Batch Feature Extract - Zero Crossings""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_bextract_zero_crossings" ;
@@ -214,32 +222,6 @@ plugbase:marsyas_bextract_zero_crossings_output_zero_crossing_counts a  vamp:Den
     dc:description        "The number of zero crossing points per sample"  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "crossings" ;
-    vamp:bin_count        1 ;
-#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
-#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
-#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
-    .
-plugbase:zerocrossing a   vamp:Plugin ;
-    dc:title              "Zero Crossings" ;
-    vamp:name             "Zero Crossings" ;
-    dc:description        """Detect and count zero crossing points""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
-    dc:rights             """GPL v3 license""" ;
-#   cc:license            <Place plugin license URI here and uncomment> ; 
-    vamp:identifier       "zerocrossing" ;
-    vamp:vamp_API_version vamp:api_version_1 ;
-    owl:versionInfo       "2" ;
-    vamp:input_domain     vamp:TimeDomain ;
-    vamp:output      plugbase:zerocrossing_output_counts ;
-    .
-plugbase:zerocrossing_output_counts a  vamp:DenseOutput ;
-    vamp:identifier       "counts" ;
-    dc:title              "Zero Crossing Counts" ;
-    dc:description        "The number of zero crossing points per processing block"  ;
-    vamp:fixed_bin_count  "true" ;
-    vamp:unit             "crossings" ;
-    a                     vamp:QuantizedOutput ;
-    vamp:quantize_step    1  ;
     vamp:bin_count        1 ;
 #   vamp:computes_event_type   <Place event type URI here and uncomment> ;
 #   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;

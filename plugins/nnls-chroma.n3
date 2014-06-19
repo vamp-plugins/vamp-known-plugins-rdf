@@ -6,6 +6,7 @@
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix af:       <http://purl.org/ontology/af/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix cc:       <http://web.resource.org/cc/> .
 @prefix :         <#> .
 
@@ -13,21 +14,30 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/nnls-chroma> .
 
+:maker
+    foaf:name "Matthias Mauch" .
+
 :nnls-chroma a  vamp:PluginLibrary ;
-    vamp:identifier "nnls-chroma"  ; 
+    vamp:identifier "nnls-chroma"  ;
+    dc:title "Chordino and NNLS Chroma" ;
+    dc:description "Harmony and chord extraction plugins by Matthias Mauch at C4DM" ;
     vamp:available_plugin plugbase:chordino ; 
     vamp:available_plugin plugbase:nnls-chroma ; 
     vamp:available_plugin plugbase:tuning ;  
     foaf:page <http://www.isophonics.net/nnls-chroma> ;
     foaf:page <http://www.omras2.org/> ;
     foaf:page <http://www.matthiasmauch.net/> ; 
+    foaf:maker :maker ;
+    vamp:has_source true ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "osx" ;
     .
 
 plugbase:chordino a   vamp:Plugin ;
     dc:title              "Chordino" ;
     vamp:name             "Chordino" ;
     dc:description        """Chordino provides a simple chord transcription based on NNLS Chroma (as in the NNLS Chroma plugin). Chord profiles given by the user in the file chord.dict are used to calculate frame-wise chord similarities. Two simple (non-state-of-the-art!) algorithms are available that smooth these to provide a chord transcription: a simple chord change method, and a standard HMM/Viterbi approach.""" ;
-    foaf:maker            [ foaf:name "Matthias Mauch" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "chordino" ;
@@ -139,7 +149,7 @@ plugbase:nnls-chroma a   vamp:Plugin ;
     dc:title              "NNLS Chroma" ;
     vamp:name             "NNLS Chroma" ;
     dc:description        """This plugin provides a number of features derived from a DFT-based log-frequency amplitude spectrum: some variants of the log-frequency spectrum, including a semitone spectrum derived from approximate transcription using the NNLS algorithm; and based on this semitone spectrum, different chroma features.""" ;
-    foaf:maker            [ foaf:name "Matthias Mauch" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "nnls-chroma" ;
@@ -287,7 +297,7 @@ plugbase:tuning a   vamp:Plugin ;
     dc:title              "Tuning" ;
     vamp:name             "Tuning" ;
     dc:description        """The tuning plugin can estimate the local and global tuning of piece. The same tuning method is used for the NNLS Chroma and Chordino plugins.""" ;
-    foaf:maker            [ foaf:name "Matthias Mauch" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "tuning" ;
