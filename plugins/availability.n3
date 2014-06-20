@@ -53,3 +53,11 @@ aubio:library
 	vamp:has_binary "osx" ;
 	vamp:has_binary "linux64" .
 
+
+@prefix cpt: <http://vamp-plugins.org/rdf/plugins/cepstral-pitchtracker#> .
+
+cpt:library
+    vamp:has_binary "osx" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    .

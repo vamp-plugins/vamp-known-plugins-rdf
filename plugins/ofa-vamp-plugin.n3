@@ -15,7 +15,7 @@
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/ofa-vamp-plugin#ofa-vamp-plugin> .
 
 :maker 
-    foaf:name "Queen Mary, University of London" ;
+    foaf:name "Chris Cannam" ;
     foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
 
 :ofa-vamp-plugin a  vamp:PluginLibrary ;

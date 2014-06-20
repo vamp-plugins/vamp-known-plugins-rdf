@@ -15,7 +15,9 @@
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/nnls-chroma> .
 
 :maker
-    foaf:name "Matthias Mauch" .
+    foaf:name "Matthias Mauch" ;
+    foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png> ;
+    foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
 
 :nnls-chroma a  vamp:PluginLibrary ;
     vamp:identifier "nnls-chroma"  ;

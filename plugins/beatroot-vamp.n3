@@ -14,7 +14,7 @@
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/beatroot-vamp> .
 
 :maker
-    foaf:name "Queen Mary, University of London" ;
+    foaf:name "Simon Dixon and Chris Cannam" ;
     foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png> ;
     foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
 
