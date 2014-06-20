@@ -31,7 +31,7 @@ plugbase:beatroot a   vamp:Plugin ;
     dc:title              "BeatRoot Beat Tracker" ;
     vamp:name             "BeatRoot Beat Tracker" ;
     dc:description        """Identify beat locations in music""" ;
-    foaf:maker            [ foaf:name "Simon Dixon (plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "beatroot" ;

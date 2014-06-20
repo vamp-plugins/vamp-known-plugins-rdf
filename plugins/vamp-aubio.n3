@@ -14,12 +14,12 @@
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/vamp-aubio> .
 
 :maker
-    foaf:name "Paul Brossier (plugin by Chris Cannam)" ;
+    foaf:name "Paul Brossier and Chris Cannam" ;
     foaf:page <http://aubio.org> .
 
 plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "vamp-aubio"  ; 
-    dc:title "Vamp Aubio plugins" ;
+    dc:title "Aubio Vamp plugins" ;
     dc:description "Onset detection, pitch tracking, note tracking and tempo tracking plugins using Paul Brossier's aubio library" ;
     vamp:available_plugin plugbase:aubionotes ; 
     vamp:available_plugin plugbase:aubioonset ; 
@@ -27,6 +27,7 @@ plugbase:library a  vamp:PluginLibrary ;
     vamp:available_plugin plugbase:aubiosilence ; 
     vamp:available_plugin plugbase:aubiotempo ; 
     foaf:page <https://code.soundsoftware.ac.uk/projects/vamp-aubio-plugins/> ;
+    foaf:maker :maker ;
     .
 
 plugbase:aubionotes a   vamp:Plugin ;
@@ -393,7 +394,7 @@ plugbase:aubiotempo a   vamp:Plugin ;
     dc:title              "Aubio Beat Tracker" ;
     vamp:name             "Aubio Beat Tracker" ;
     dc:description        """Estimate the musical tempo and track beat positions""" ;
-    foaf:maker            [ foaf:name "Paul Brossier (method by Matthew Davies, plugin by Chris Cannam)" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "aubiotempo" ;

@@ -17,12 +17,14 @@
 :maker
     foaf:name "SMC Group at INESC Porto" ;
     foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/smc.png> ;
-    foaf:page <http://smc.inescporto.pt> .
+    foaf:page <http://smc.inescporto.pt> ;
+    .
 
 :mvamp a  vamp:PluginLibrary ;
     vamp:identifier "mvamp-ibt"  ; 
     vamp:available_plugin plugbase:marsyas_ibt ; 
     foaf:page <http://smc.inescporto.pt/technologies/ibt/> ;
+    doap:download-page <http://smc.inescporto.pt/technologies/ibt/> ;
     dc:title "INESC Porto Beat Tracker" ;
     dc:description "Plugin from João Oliveira of the SMC Group for tempo induction and beat tracking, built on the MARSYAS framework" ;
     vamp:has_source true ;

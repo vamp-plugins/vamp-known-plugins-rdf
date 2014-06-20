@@ -19,7 +19,7 @@
 
 :vamp-libxtract a  vamp:PluginLibrary ;
     vamp:identifier "vamp-libxtract"  ; 
-    dc:title "Vamp libxtract plugins" ;
+    dc:title "libxtract Vamp plugins" ;
     dc:description """Low-level feature extraction plugins using Jamie Bullock's libxtract library to provide around 50 spectral and other features""" ;
     vamp:available_plugin plugbase:amdf ; 
     vamp:available_plugin plugbase:asdf ; 
