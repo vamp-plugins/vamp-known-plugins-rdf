@@ -1,0 +1,123 @@
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix plugbase: <http://vamp-plugins.org/rdf/plugins/vampy#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix af:       <http://purl.org/ontology/af/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap:     <http://usefulinc.com/ns/doap#> .
+@prefix cc:       <http://web.resource.org/cc/> .
+@prefix :         <#> .
+
+
+## Properties of this document
+
+<> a vamp:PluginDescription ;
+    foaf:maker         <http://vamp-plugins.org/rdf/template-generator> ;
+    foaf:primaryTopic  <http://vamp-plugins.org/rdf/plugins/vampy> .
+
+
+## Maker of the whole plugin library
+
+:library_maker
+    foaf:name  "Robert Gordon University" ;
+    foaf:page  <http://www.rgu.ac.uk> ;
+    foaf:logo  <http://vamp-plugins.org/rdf/plugins/makers/rgu.png> ;
+    .
+
+
+## Properties of the plugin library, and references to the plugins it contains
+
+plugbase:library a vamp:PluginLibrary ;
+    vamp:identifier        "vampy-mfs" ;
+    foaf:maker             :library_maker ; 
+    vamp:available_plugin  plugbase:vampy-mfs ; 
+    dc:title               "RGU Mel-Frequency Spectrum" ;
+    dc:description         "A music-inspired texture representation implemented as a VamPy plugin, from Robert Gordon University in Aberdeen." ;
+    foaf:page              <http://sourceforge.net/projects/rgumfs/> ; 
+    doap:download-page     <http://sourceforge.net/projects/rgumfs/files/> ;
+    vamp:has_source true ;
+    vamp:is_vampy_plugin true ;
+    .
+
+
+## Properties of the Vampy MFS Plugin plugin
+
+plugbase:vampy-mfs a vamp:Plugin ;
+    dc:title              "Vampy MFS Plugin" ;
+    vamp:name             "Vampy MFS Plugin" ;
+    dc:description        """MFS plugin""" ;
+    foaf:maker            :library_maker ;
+    dc:rights             """Plugin By Ben Horsburgh""" ;
+#   cc:license            <Place plugin license URI here and uncomment> ; 
+    vamp:identifier       "vampy-mfs" ;
+    vamp:vamp_API_version vamp:api_version_2 ;
+    owl:versionInfo       "2" ;
+    vamp:input_domain     vamp:FrequencyDomain ;
+
+    vamp:parameter   plugbase:vampy-mfs_param_melbands ;
+    vamp:parameter   plugbase:vampy-mfs_param_minHz ;
+    vamp:parameter   plugbase:vampy-mfs_param_maxHz ;
+    vamp:parameter   plugbase:vampy-mfs_param_two_ch ;
+
+    vamp:output      plugbase:vampy-mfs_output_mfs ;
+    .
+plugbase:vampy-mfs_param_melbands a  vamp:QuantizedParameter ;
+    vamp:identifier     "melbands" ;
+    dc:title            "Number of bands (coefficients)" ;
+    dc:format           "" ;
+    vamp:min_value       2 ;
+    vamp:max_value       128 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   40 ;
+    vamp:value_names     ();
+    .
+plugbase:vampy-mfs_param_minHz a  vamp:QuantizedParameter ;
+    vamp:identifier     "minHz" ;
+    dc:title            "minimum frequency" ;
+    dc:format           "Hz" ;
+    vamp:min_value       0 ;
+    vamp:max_value       24000 ;
+    vamp:unit           "Hz" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   0 ;
+    vamp:value_names     ();
+    .
+plugbase:vampy-mfs_param_maxHz a  vamp:QuantizedParameter ;
+    vamp:identifier     "maxHz" ;
+    dc:title            "maximum frequency" ;
+    dc:format           "Hz" ;
+    vamp:min_value       100 ;
+    vamp:max_value       24000 ;
+    vamp:unit           "Hz" ;
+    vamp:quantize_step   100  ;
+    vamp:default_value   11025 ;
+    vamp:value_names     ();
+    .
+plugbase:vampy-mfs_param_two_ch a  vamp:Parameter ;
+    vamp:identifier     "two_ch" ;
+    dc:title            "Process channels separately" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       0 ;
+    vamp:unit           ""  ;
+    vamp:default_value   0 ;
+    vamp:value_names     ();
+    .
+plugbase:vampy-mfs_output_mfs a  vamp:DenseOutput ;
+    vamp:identifier       "mfs" ;
+    dc:title              "MFS" ;
+    dc:description        """MFS Coefficients"""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "Mels" ;
+    a                     vamp:QuantizedOutput ;
+    vamp:quantize_step    -7.21552e-34  ;
+    vamp:bin_count        40 ;
+    vamp:bin_names        ( "C 0" "C 1" "C 2" "C 3" "C 4" "C 5" "C 6" "C 7" "C 8" "C 9" "C 10" "C 11" "C 12" "C 13" "C 14" "C 15" "C 16" "C 17" "C 18" "C 19" "C 20" "C 21" "C 22" "C 23" "C 24" "C 25" "C 26" "C 27" "C 28" "C 29" "C 30" "C 31" "C 32" "C 33" "C 34" "C 35" "C 36" "C 37" "C 38" "C 39");
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
+
