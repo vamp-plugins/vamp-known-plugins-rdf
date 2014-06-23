@@ -19,5 +19,6 @@ http://www.vamp-plugins.org/rdf/plugins/silvet
 http://www.vamp-plugins.org/rdf/plugins/simple-cepstrum
 http://www.vamp-plugins.org/rdf/plugins/cepstral-pitchtracker
 http://www.vamp-plugins.org/rdf/plugins/cqvamp
+http://www.vamp-plugins.org/rdf/plugins/ua-vamp-plugins
 
 
