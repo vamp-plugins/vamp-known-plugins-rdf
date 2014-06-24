@@ -1,0 +1,92 @@
+@prefix vamp: <http://purl.org/ontology/vamp/> .
+@prefix : <#> .
+
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-energy> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-intensity> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-peaks> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-rhythm> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-spectral-contrast> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-spectral-flux> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins#bbc-speechmusic-segmenter> vamp:category "Classification" .
+<http://vamp-plugins.org/rdf/plugins/beatroot-vamp#beatroot> vamp:category "Time > Tempo" .
+<http://vamp-plugins.org/rdf/plugins/cqvamp#cqchromavamp> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/cqvamp#cqvamp> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/cqvamp#cqvampmidi> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/match-vamp-plugin#match> vamp:category "Time > Alignment" .
+<http://vamp-plugins.org/rdf/plugins/nnls-chroma#chordino> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/nnls-chroma#nnls-chroma> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/nnls-chroma#tuning> vamp:category "Key and Tonality" .
+<http://vamp-plugins.org/rdf/plugins/pyin#pyin> vamp:category "Pitch" .
+<http://vamp-plugins.org/rdf/plugins/pyin#yin> vamp:category "Pitch" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-adaptivespectrogram> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-barbeattracker> vamp:category "Time > Tempo" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-chromagram> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-constantq> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-dwt> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-keydetector> vamp:category "Key and Tonality" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-mfcc> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-onsetdetector> vamp:category "Time > Onsets" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-segmenter> vamp:category "Classification" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-similarity> vamp:category "Classification" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-tempotracker> vamp:category "Time > Tempo" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-tonalchange> vamp:category "Key and Tonality" .
+<http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#qm-transcription> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/silvet#silvet> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/vamp-aubio#aubionotes> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/vamp-aubio#aubioonset> vamp:category "Time > Onsets" .
+<http://vamp-plugins.org/rdf/plugins/vamp-aubio#aubiopitch> vamp:category "Pitch" .
+<http://vamp-plugins.org/rdf/plugins/vamp-aubio#aubiosilence> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-aubio#aubiotempo> vamp:category "Time > Tempo" .
+<http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#amplitudefollower> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#fixedtempo> vamp:category "Time > Tempo" .
+<http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#percussiononsets> vamp:category "Time > Onsets" .
+<http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#powerspectrum> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#spectralcentroid> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#zerocrossing> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#amdf> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#asdf> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#autocorrelation> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#average_deviation> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#bark_coefficients> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#crest> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#dct> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#f0> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#failsafe_f0> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#flatness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#harmonic_spectrum> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#highest_value> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#irregularity_j> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#irregularity_k> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#kurtosis> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#loudness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#lowest_value> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#mean> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#mfcc> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#noisiness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#nonzero_count> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#odd_even_ratio> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#peak_spectrum> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#rms_amplitude> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#rolloff> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#sharpness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#skewness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#smoothness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_centroid> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_inharmonicity> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_kurtosis> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_skewness> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_slope> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_standard_deviation> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectral_variance> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spectrum> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#spread> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#standard_deviation> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#sum> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#tonality> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#tristimulus_1> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#tristimulus_2> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#tristimulus_3> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#variance> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#wavelet_f0> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-libxtract#zcr> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/vamp-rubberband#rubberband> vamp:category "Time > Timestretch Analysis" .

@@ -7,50 +7,60 @@
 @prefix af:       <http://purl.org/ontology/af/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
 @prefix cc:       <http://web.resource.org/cc/> .
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix :         <#> .
 
 <>  a   vamp:PluginDescription ;
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/bbc-vamp-plugins> .
 
-:bbc-vamp-plugins a  vamp:PluginLibrary ;
+:maker 
+    foaf:name "BBC" ;
+    foaf:page "http://www.bbc.co.uk/" .
+
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "bbc-vamp-plugins"  ; 
+    dc:title "BBC Vamp Plugins"  ; 
+    dc:description "A collection of audio feature extraction algorithms from BBC Research and Development" ;
+    foaf:page <https://github.com/bbcrd/bbc-vamp-plugins/blob/master/README.md> ;
+    doap:download-page <https://github.com/bbcrd/bbc-vamp-plugins/releases> ;
     vamp:available_plugin plugbase:bbc-energy ; 
-    vamp:available_plugin plugbase:bbc-intensity ; 
+    vamp:available_plugin plugbase:bbc-intensity ;  
+    vamp:available_plugin plugbase:bbc-peaks ; 
     vamp:available_plugin plugbase:bbc-rhythm ; 
     vamp:available_plugin plugbase:bbc-spectral-contrast ; 
     vamp:available_plugin plugbase:bbc-spectral-flux ; 
     vamp:available_plugin plugbase:bbc-speechmusic-segmenter ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    vamp:has_source true ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "osx" 
     .
 
 plugbase:bbc-energy a   vamp:Plugin ;
     dc:title              "Energy" ;
     vamp:name             "Energy" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the RMS energy and low energy ratio of a signal""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-energy" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "2" ;
+    owl:versionInfo       "3" ;
     vamp:input_domain     vamp:TimeDomain ;
 
-    vamp:parameter   plugbase:bbc-energy_param_threshold ;
     vamp:parameter   plugbase:bbc-energy_param_root ;
+    vamp:parameter   plugbase:bbc-energy_param_avgwindow ;
+    vamp:parameter   plugbase:bbc-energy_param_avgpercentile ;
+    vamp:parameter   plugbase:bbc-energy_param_dipthresh ;
+    vamp:parameter   plugbase:bbc-energy_param_threshold ;
 
     vamp:output      plugbase:bbc-energy_output_rmsenergy ;
+    vamp:output      plugbase:bbc-energy_output_rmsdelta ;
     vamp:output      plugbase:bbc-energy_output_lowenergy ;
-    .
-plugbase:bbc-energy_param_threshold a  vamp:Parameter ;
-    vamp:identifier     "threshold" ;
-    dc:title            "Low energy threshold" ;
-    dc:format           "" ;
-    vamp:min_value       0 ;
-    vamp:max_value       10 ;
-    vamp:unit           ""  ;
-    vamp:default_value   1 ;
-    vamp:value_names     ();
+    vamp:output      plugbase:bbc-energy_output_average ;
+    vamp:output      plugbase:bbc-energy_output_pdip ;
     .
 plugbase:bbc-energy_param_root a  vamp:QuantizedParameter ;
     vamp:identifier     "root" ;
@@ -63,10 +73,61 @@ plugbase:bbc-energy_param_root a  vamp:QuantizedParameter ;
     vamp:default_value   1 ;
     vamp:value_names     ();
     .
+plugbase:bbc-energy_param_avgwindow a  vamp:Parameter ;
+    vamp:identifier     "avgwindow" ;
+    dc:title            "Moving average window size" ;
+    dc:format           "seconds" ;
+    vamp:min_value       0.001 ;
+    vamp:max_value       10 ;
+    vamp:unit           "seconds"  ;
+    vamp:default_value   1 ;
+    vamp:value_names     ();
+    .
+plugbase:bbc-energy_param_avgpercentile a  vamp:Parameter ;
+    vamp:identifier     "avgpercentile" ;
+    dc:title            "Moving average percentile" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       100 ;
+    vamp:unit           ""  ;
+    vamp:default_value   3 ;
+    vamp:value_names     ();
+    .
+plugbase:bbc-energy_param_dipthresh a  vamp:Parameter ;
+    vamp:identifier     "dipthresh" ;
+    dc:title            "Dip threshold" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       10 ;
+    vamp:unit           ""  ;
+    vamp:default_value   3 ;
+    vamp:value_names     ();
+    .
+plugbase:bbc-energy_param_threshold a  vamp:Parameter ;
+    vamp:identifier     "threshold" ;
+    dc:title            "Low energy threshold" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       10 ;
+    vamp:unit           ""  ;
+    vamp:default_value   1 ;
+    vamp:value_names     ();
+    .
 plugbase:bbc-energy_output_rmsenergy a  vamp:DenseOutput ;
     vamp:identifier       "rmsenergy" ;
     dc:title              "RMS Energy" ;
     dc:description        """RMS of the signal."""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "" ;
+    vamp:bin_count        1 ;
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
+plugbase:bbc-energy_output_rmsdelta a  vamp:DenseOutput ;
+    vamp:identifier       "rmsdelta" ;
+    dc:title              "RMS Energy Delta" ;
+    dc:description        """Difference between RMS of previous and current blocks."""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
     vamp:bin_count        1 ;
@@ -86,11 +147,33 @@ plugbase:bbc-energy_output_lowenergy a  vamp:SparseOutput ;
 #   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
 #   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
     .
+plugbase:bbc-energy_output_average a  vamp:DenseOutput ;
+    vamp:identifier       "average" ;
+    dc:title              "Moving Average" ;
+    dc:description        """Mean of RMS values over moving average window."""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "" ;
+    vamp:bin_count        1 ;
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
+plugbase:bbc-energy_output_pdip a  vamp:DenseOutput ;
+    vamp:identifier       "pdip" ;
+    dc:title              "Dip probability" ;
+    dc:description        """Probability of the RMS energy dipping below the threshold."""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "" ;
+    vamp:bin_count        1 ;
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
 plugbase:bbc-intensity a   vamp:Plugin ;
     dc:title              "Intensity" ;
     vamp:name             "Intensity" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the intensity of a signal and the intensity ratio for a number of sub-bands""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-intensity" ;
@@ -137,11 +220,35 @@ plugbase:bbc-intensity_output_intensity-ratio a  vamp:DenseOutput ;
 #   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
 #   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
     .
+plugbase:bbc-peaks a   vamp:Plugin ;
+    dc:title              "Peaks" ;
+    vamp:name             "Peaks" ;
+    dc:description        """Calculates peak and trough values of a signal""" ;
+    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:rights             """(c) 2014 British Broadcasting Corporation""" ;
+#   cc:license            <Place plugin license URI here and uncomment> ; 
+    vamp:identifier       "bbc-peaks" ;
+    vamp:vamp_API_version vamp:api_version_2 ;
+    owl:versionInfo       "1" ;
+    vamp:input_domain     vamp:TimeDomain ;
+    vamp:output      plugbase:bbc-peaks_output_peaks ;
+    .
+plugbase:bbc-peaks_output_peaks a  vamp:DenseOutput ;
+    vamp:identifier       "peaks" ;
+    dc:title              "Peaks" ;
+    dc:description        """Peak and trough, in order of occurance."""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "" ;
+    vamp:bin_count        1 ;
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
 plugbase:bbc-rhythm a   vamp:Plugin ;
     dc:title              "Rhythm" ;
     vamp:name             "Rhythm" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates rhythmic features of a signal, including onsets and tempo """ ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-rhythm" ;
@@ -356,8 +463,8 @@ plugbase:bbc-rhythm_output_tempo a  vamp:SparseOutput ;
 plugbase:bbc-spectral-contrast a   vamp:Plugin ;
     dc:title              "Spectral Contrast" ;
     vamp:name             "Spectral Contrast" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the peak and valleys of the spectral contrast feature""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-spectral-contrast" ;
@@ -430,8 +537,8 @@ plugbase:bbc-spectral-contrast_output_mean a  vamp:DenseOutput ;
 plugbase:bbc-spectral-flux a   vamp:Plugin ;
     dc:title              "Spectral Flux" ;
     vamp:name             "Spectral Flux" ;
-    dc:description        """""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates the spectral flux""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2013 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-spectral-flux" ;
@@ -469,8 +576,8 @@ plugbase:bbc-spectral-flux_output_spectral-flux a  vamp:DenseOutput ;
 plugbase:bbc-speechmusic-segmenter a   vamp:Plugin ;
     dc:title              "Speech/Music segmenter" ;
     vamp:name             "Speech/Music segmenter" ;
-    dc:description        """A simple speech/music segmenter""" ;
-    foaf:maker            [ foaf:name "BBC" ] ; # FIXME could give plugin author's URI here
+    dc:description        """Calculates boundaries between speech and music""" ;
+    foaf:maker            :maker ;
     dc:rights             """(c) 2011 British Broadcasting Corporation""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "bbc-speechmusic-segmenter" ;

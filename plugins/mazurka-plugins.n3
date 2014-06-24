@@ -6,6 +6,7 @@
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix af:       <http://purl.org/ontology/af/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix cc:       <http://web.resource.org/cc/> .
 @prefix :         <#> .
 
@@ -13,22 +14,32 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/mazurka-plugins> .
 
-:mazurka-plugins a  vamp:PluginLibrary ;
+:maker 
+    foaf:name "The Mazurka Project" ;
+    foaf:page <http://www.mazurka.org.uk/> .
+
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "mazurka-plugins"  ; 
+    dc:title "Mazurka Plugins" ;
+    dc:description "Spectral visualisation and feature extraction plugins from the Mazurka project" ;
+    foaf:maker :maker ;
+    foaf:page <http://www.mazurka.org.uk/software/sv/plugin/> ;
+    doap:download-page <http://www.mazurka.org.uk/software/sv/plugin/download/> ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "linux32" ;
     vamp:available_plugin plugbase:mzchronogram ; 
     vamp:available_plugin plugbase:mzharmonicspectrum ; 
     vamp:available_plugin plugbase:mznevermore ; 
     vamp:available_plugin plugbase:mzpowercurve ; 
     vamp:available_plugin plugbase:mzspectralflux ; 
     vamp:available_plugin plugbase:mzspectralreflux ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
     .
 
 plugbase:mzchronogram a   vamp:Plugin ;
     dc:title              "Chronogram" ;
     vamp:name             "Chronogram" ;
     dc:description        """Chronogram""" ;
-    foaf:maker            [ foaf:name "The Mazurka Project" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """2006 Craig Stuart Sapp""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mzchronogram" ;
@@ -124,7 +135,7 @@ plugbase:mzharmonicspectrum a   vamp:Plugin ;
     dc:title              "Harmonic Spectrogram" ;
     vamp:name             "Harmonic Spectrogram" ;
     dc:description        """Harmonic Spectrogram""" ;
-    foaf:maker            [ foaf:name "The Mazurka Project" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """2006 Craig Stuart Sapp""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mzharmonicspectrum" ;
@@ -262,7 +273,7 @@ plugbase:mznevermore a   vamp:Plugin ;
     dc:title              "Nevermore Spectrogram" ;
     vamp:name             "Nevermore Spectrogram" ;
     dc:description        """Nevermore Spectrogram""" ;
-    foaf:maker            [ foaf:name "The Mazurka Project" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """2006 Craig Stuart Sapp""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mznevermore" ;
@@ -407,7 +418,7 @@ plugbase:mzpowercurve a   vamp:Plugin ;
     dc:title              "Power Curve" ;
     vamp:name             "Power Curve" ;
     dc:description        """Power Curve""" ;
-    foaf:maker            [ foaf:name "The Mazurka Project" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """2006 Craig Stuart Sapp""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mzpowercurve" ;
@@ -530,7 +541,7 @@ plugbase:mzspectralflux a   vamp:Plugin ;
     dc:title              "Spectral Flux" ;
     vamp:name             "Spectral Flux" ;
     dc:description        """Spectral Flux""" ;
-    foaf:maker            [ foaf:name "The Mazurka Project" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """2006 Craig Stuart Sapp""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mzspectralflux" ;
@@ -725,7 +736,7 @@ plugbase:mzspectralreflux a   vamp:Plugin ;
     dc:title              "Spectral Reflux" ;
     vamp:name             "Spectral Reflux" ;
     dc:description        """Spectral Reflux""" ;
-    foaf:maker            [ foaf:name "The Mazurka Project" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """2006 Craig Stuart Sapp""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "mzspectralreflux" ;

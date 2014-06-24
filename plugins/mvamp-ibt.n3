@@ -6,6 +6,7 @@
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix af:       <http://purl.org/ontology/af/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix cc:       <http://web.resource.org/cc/> .
 @prefix :         <#> .
 
@@ -13,17 +14,31 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/mvamp-ibt> .
 
+:maker
+    foaf:name "SMC Group at INESC Porto" ;
+    foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/smc.png> ;
+    foaf:page <http://smc.inescporto.pt> ;
+    .
+
 :mvamp a  vamp:PluginLibrary ;
     vamp:identifier "mvamp-ibt"  ; 
     vamp:available_plugin plugbase:marsyas_ibt ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    foaf:page <http://smc.inescporto.pt/technologies/ibt/> ;
+    doap:download-page <http://smc.inescporto.pt/technologies/ibt/> ;
+    dc:title "INESC Porto Beat Tracker" ;
+    dc:description "Plugin from João Oliveira of the SMC Group for tempo induction and beat tracking, built on the MARSYAS framework" ;
+    vamp:has_source true ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
     .
 
 plugbase:marsyas_ibt a   vamp:Plugin ;
     dc:title              "IBT - INESC Beat Tracker" ;
     vamp:name             "IBT - INESC Beat Tracker" ;
     dc:description        """Estimates beat locations and tempo (off-line [default] and on-line modes of operation)""" ;
-    foaf:maker            [ foaf:name "Marsyas Plugins" ] ; # FIXME could give plugin author's URI here
+    foaf:maker            :maker ;
     dc:rights             """GPL v3 license""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "marsyas_ibt" ;
@@ -37,6 +52,7 @@ plugbase:marsyas_ibt a   vamp:Plugin ;
 	vamp:parameter   	  plugbase:marsyas_ibt_param_online ;
 	vamp:parameter   	  plugbase:marsyas_ibt_param_metrical_changes ;	
     vamp:output      	  plugbase:marsyas_ibt_output_beats ;
+    vamp:category "Time > Tempo" ;
     .
 plugbase:marsyas_ibt_param_indtime a  vamp:QuantizedParameter ;
     vamp:identifier      "indtime" ;

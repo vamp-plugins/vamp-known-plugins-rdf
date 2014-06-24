@@ -6,6 +6,7 @@
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix af:       <http://purl.org/ontology/af/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap: 	  <http://usefulinc.com/ns/doap#> .
 @prefix cc:       <http://web.resource.org/cc/> .
 @prefix :         <#> .
 
@@ -13,17 +14,31 @@
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/vamp-onsetsds> .
 
+:maker 
+    foaf:name "Dan Stowell" ;
+    foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png> ;
+    foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
+
 :vamp-onsetsds a  vamp:PluginLibrary ;
     vamp:identifier "vamp-onsetsds"  ; 
+    dc:title "OnsetsDS plugin" ;
+    dc:description """Note onset detector using Dan Stowell's OnsetsDS library""" ;
     vamp:available_plugin plugbase:onsetsds ; 
-#   foaf:page <Place more-information HTML page URL here and uncomment> ;
+    foaf:maker            :maker ;
+    foaf:page <http://code.soundsoftware.ac.uk/projects/vamp-onsetsds-plugin> ;
+    doap:download-page: <http://sourceforge.net/projects/vamp/files/vamp-onsetsds-plugin/0.2/> ;
+    vamp:has_source true ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "linux32" ;
     .
 
 plugbase:onsetsds a   vamp:Plugin ;
     dc:title              "OnsetsDS Onset Detector" ;
     vamp:name             "OnsetsDS Onset Detector" ;
     dc:description        """Detect note onsets""" ;
-    foaf:maker            [ foaf:name "Dan Stowell" ] ; # FIXME could give plugin author's URI here
+    vamp:category 	  "Time > Onsets" ;
+    foaf:maker            :maker ;
     dc:rights             """Copyright (c) 2007-2008 Dan Stowell""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ; 
     vamp:identifier       "onsetsds" ;

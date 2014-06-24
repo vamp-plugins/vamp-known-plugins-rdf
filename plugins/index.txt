@@ -15,3 +15,9 @@ http://www.vamp-plugins.org/rdf/plugins/bbc-vamp-plugins
 http://www.vamp-plugins.org/rdf/plugins/beatroot-vamp
 http://www.vamp-plugins.org/rdf/plugins/pyin
 http://www.vamp-plugins.org/rdf/plugins/segmentino
+http://www.vamp-plugins.org/rdf/plugins/silvet
+http://www.vamp-plugins.org/rdf/plugins/simple-cepstrum
+http://www.vamp-plugins.org/rdf/plugins/cepstral-pitchtracker
+http://www.vamp-plugins.org/rdf/plugins/cqvamp
+http://www.vamp-plugins.org/rdf/plugins/ua-vamp-plugins
+http://www.vamp-plugins.org/rdf/plugins/mfs
