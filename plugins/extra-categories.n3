@@ -90,3 +90,4 @@
 <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#wavelet_f0> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#zcr> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/vamp-rubberband#rubberband> vamp:category "Time > Timestretch Analysis" .
+<http://vamp-plugins.org/rdf/plugins/cepstral-pitchtracker#cepstral-pitchtracker> vamp:category "Notes" .
