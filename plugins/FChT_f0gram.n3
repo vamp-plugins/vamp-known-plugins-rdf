@@ -1,0 +1,243 @@
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix plugbase: <http://vamp-plugins.org/rdf/plugins/FChT_f0gram#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix af:       <http://purl.org/ontology/af/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap:     <http://usefulinc.com/ns/doap#> .
+@prefix cc:       <http://web.resource.org/cc/> .
+@prefix :         <#> .
+
+
+## Properties of this document
+
+<> a vamp:PluginDescription ;
+    foaf:maker         <http://vamp-plugins.org/rdf/template-generator> ;
+    foaf:primaryTopic  <http://vamp-plugins.org/rdf/plugins/FChT_f0gram> .
+
+
+## Maker of the whole plugin library
+
+:library_maker
+    foaf:name  "Audio Processing Group, Universidad de la Republica, Uruguay" ;
+    foaf:page  <http://iie.fing.edu.uy/investigacion/grupos/gpa/index.html> ;
+    foaf:logo  <http://vamp-plugins.org/rdf/plugins/makers/udelar.png> ;
+    .
+
+
+## Properties of the plugin library, and references to the plugins it contains
+
+plugbase:library a vamp:PluginLibrary ;
+    vamp:identifier        "FChT_f0gram" ;
+    foaf:maker             :library_maker ; 
+    vamp:available_plugin  plugbase:fchtransformf0gram ; 
+    dc:title               "Fan Chirp F0gram" ;  # Place library name here and uncomment
+    dc:description         "Fundamental-frequency salience visualisation based on the Fan Chirp Transform, from the Universidad de la Republica, Uruguay" ;
+    foaf:page              <http://iie.fing.edu.uy/investigacion/grupos/gpa/vamp-plugin.html> ;  # Place more-info HTML page URL here and uncomment
+    doap:download-page     <http://iie.fing.edu.uy/investigacion/grupos/gpa/vamp-plugin.html> ;  # Place download HTML page URL here and uncomment
+    vamp:has_source true ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
+    .
+
+
+## Properties of the Fan Chirp Transform F0gram plugin
+
+plugbase:fchtransformf0gram a vamp:Plugin ;
+    dc:title              "Fan Chirp Transform F0gram" ;
+    vamp:name             "Fan Chirp Transform F0gram" ;
+    dc:description        """This plug-in produces a representation, called F0gram, which exhibits the salience of the fundamental frequency of the sound sources in the audio file. The computation of the F0gram makes use of the Fan Chirp Transform analysis. It is based on the article "Fan chirp transform for music representation"  P. Cancela, E. Lopez, M. Rocamora, International Conference on Digital Audio Effects, 13th. DAFx-10. Graz, Austria - 6-10 Sep 2010.""" ;
+    foaf:maker            :library_maker ;
+    dc:rights             """copyright (C) 2011 GPL - Audio Processing Group, UdelaR""" ;
+#   cc:license            <Place plugin license URI here and uncomment> ; 
+    vamp:identifier       "fchtransformf0gram" ;
+    vamp:vamp_API_version vamp:api_version_2 ;
+    owl:versionInfo       "0" ;
+    vamp:input_domain     vamp:TimeDomain ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_fmax ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_nsamp ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_nfft ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_alpha_max ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_num_warps ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_alpha_dist ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_f0min ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_num_octs ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_num_f0_hyps ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_f0s_per_oct ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_f0_prefer_fun ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_f0_prefer_mean ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_f0_prefer_stdev ;
+    vamp:parameter   plugbase:fchtransformf0gram_param_f0gram_mode ;
+
+    vamp:output      plugbase:fchtransformf0gram_output_f0gram ;
+    .
+plugbase:fchtransformf0gram_param_fmax a  vamp:QuantizedParameter ;
+    vamp:identifier     "fmax" ;
+    dc:title            "Maximum frequency" ;
+    dc:format           "Hz" ;
+    vamp:min_value       2000 ;
+    vamp:max_value       22050 ;
+    vamp:unit           "Hz" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   10000 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_nsamp a  vamp:QuantizedParameter ;
+    vamp:identifier     "nsamp" ;
+    dc:title            "Number of samples" ;
+    dc:format           "samples" ;
+    vamp:min_value       128 ;
+    vamp:max_value       4096 ;
+    vamp:unit           "samples" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   2048 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_nfft a  vamp:QuantizedParameter ;
+    vamp:identifier     "nfft" ;
+    dc:title            "FFT number of points" ;
+    dc:format           "samples" ;
+    vamp:min_value       0 ;
+    vamp:max_value       4 ;
+    vamp:unit           "samples" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   3 ;
+    vamp:value_names     ( "256" "512" "1024" "2048" "4096" "8192");
+    .
+plugbase:fchtransformf0gram_param_alpha_max a  vamp:QuantizedParameter ;
+    vamp:identifier     "alpha_max" ;
+    dc:title            "Maximum alpha value" ;
+    dc:format           "Hz/s" ;
+    vamp:min_value       -10 ;
+    vamp:max_value       10 ;
+    vamp:unit           "Hz/s" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   5 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_num_warps a  vamp:QuantizedParameter ;
+    vamp:identifier     "num_warps" ;
+    dc:title            "Number of warpings" ;
+    dc:format           "" ;
+    vamp:min_value       1 ;
+    vamp:max_value       101 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   2  ;
+    vamp:default_value   21 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_alpha_dist a  vamp:QuantizedParameter ;
+    vamp:identifier     "alpha_dist" ;
+    dc:title            "alpha distribution" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       1 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   1 ;
+    vamp:value_names     ( "lin" "log");
+    .
+plugbase:fchtransformf0gram_param_f0min a  vamp:QuantizedParameter ;
+    vamp:identifier     "f0min" ;
+    dc:title            "min f0" ;
+    dc:format           "Hz" ;
+    vamp:min_value       1 ;
+    vamp:max_value       500 ;
+    vamp:unit           "Hz" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   80 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_num_octs a  vamp:QuantizedParameter ;
+    vamp:identifier     "num_octs" ;
+    dc:title            "number of octaves" ;
+    dc:format           "" ;
+    vamp:min_value       1 ;
+    vamp:max_value       10 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   4 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_num_f0_hyps a  vamp:QuantizedParameter ;
+    vamp:identifier     "num_f0_hyps" ;
+    dc:title            "number of f0 hypotesis" ;
+    dc:format           "" ;
+    vamp:min_value       1 ;
+    vamp:max_value       100 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   10 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_f0s_per_oct a  vamp:QuantizedParameter ;
+    vamp:identifier     "f0s_per_oct" ;
+    dc:title            "f0 values per octave" ;
+    dc:format           "" ;
+    vamp:min_value       12 ;
+    vamp:max_value       768 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   192 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_f0_prefer_fun a  vamp:QuantizedParameter ;
+    vamp:identifier     "f0_prefer_fun" ;
+    dc:title            "f0 preference function" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       1 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   1 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_f0_prefer_mean a  vamp:QuantizedParameter ;
+    vamp:identifier     "f0_prefer_mean" ;
+    dc:title            "mean f0 preference function" ;
+    dc:format           "" ;
+    vamp:min_value       1 ;
+    vamp:max_value       127 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   60 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_f0_prefer_stdev a  vamp:QuantizedParameter ;
+    vamp:identifier     "f0_prefer_stdev" ;
+    dc:title            "stdev of f0 preference function" ;
+    dc:format           "" ;
+    vamp:min_value       1 ;
+    vamp:max_value       127 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   18 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_param_f0gram_mode a  vamp:QuantizedParameter ;
+    vamp:identifier     "f0gram_mode" ;
+    dc:title            "display mode of f0gram" ;
+    dc:format           "" ;
+    vamp:min_value       0 ;
+    vamp:max_value       1 ;
+    vamp:unit           "" ;
+    vamp:quantize_step   1  ;
+    vamp:default_value   1 ;
+    vamp:value_names     ();
+    .
+plugbase:fchtransformf0gram_output_f0gram a  vamp:DenseOutput ;
+    vamp:identifier       "f0gram" ;
+    dc:title              "F0gram: salience of f0s" ;
+    dc:description        """This representation show the salience of the different f0s in the signal."""  ;
+    vamp:fixed_bin_count  "true" ;
+    vamp:unit             "Hertz" ;
+    vamp:bin_count        768 ;
+#   vamp:computes_event_type   <Place event type URI here and uncomment> ;
+#   vamp:computes_feature      <Place feature attribute URI here and uncomment> ;
+#   vamp:computes_signal_type  <Place signal type URI here and uncomment> ;
+    .
+
