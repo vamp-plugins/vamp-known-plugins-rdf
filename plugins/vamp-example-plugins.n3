@@ -23,6 +23,7 @@
     dc:title "Vamp example plugins" ;
     dc:description """A set of simple plugins as included with the Vamp developers kit. Amplitude tracker, simple percussion onset detector, tempo estimator, spectral centroid, power spectrum, and zero-crossing counter.""" ;
     foaf:page <http://www.vamp-plugins.org/plugin-doc/vamp-example-plugins.html> ;
+    doap:download-page <http://vamp-plugins.org/develop.html> ;
     vamp:available_plugin plugbase:amplitudefollower ; 
     vamp:available_plugin plugbase:fixedtempo ; 
     vamp:available_plugin plugbase:percussiononsets ; 
@@ -33,6 +34,10 @@
     dc:title "Vamp Example Plugins" ;
     dc:description """Example plugins from the Vamp Plugin SDK""" ;
     vamp:has_source true ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
     .
 
 plugbase:amplitudefollower a   vamp:Plugin ;

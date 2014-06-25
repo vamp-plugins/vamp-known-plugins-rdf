@@ -91,3 +91,7 @@
 <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#zcr> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/vamp-rubberband#rubberband> vamp:category "Time > Timestretch Analysis" .
 <http://vamp-plugins.org/rdf/plugins/cepstral-pitchtracker#cepstral-pitchtracker> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/mtg-melodia#melodia> vamp:category "Pitch" .
+<http://vamp-plugins.org/rdf/plugins/mtg-melodia#melodiaviz> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/ua-vamp-plugins#onsetsua> vamp:category "Time > Onsets" .
+<http://vamp-plugins.org/rdf/plugins/ua-vamp-plugins#mf0ua> vamp:category "Notes" .
