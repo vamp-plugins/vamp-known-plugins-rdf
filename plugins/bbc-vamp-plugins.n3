@@ -16,7 +16,8 @@
 
 :maker 
     foaf:name "BBC" ;
-    foaf:page "http://www.bbc.co.uk/" .
+    foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/bbc.png> ;
+    foaf:page <http://www.bbc.co.uk/> .
 
 plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "bbc-vamp-plugins"  ; 
