@@ -91,7 +91,23 @@
 <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#zcr> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/vamp-rubberband#rubberband> vamp:category "Time > Timestretch Analysis" .
 <http://vamp-plugins.org/rdf/plugins/cepstral-pitchtracker#cepstral-pitchtracker> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/simple-cepstrum#simple-cepstrum> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/mtg-melodia#melodia> vamp:category "Pitch" .
 <http://vamp-plugins.org/rdf/plugins/mtg-melodia#melodiaviz> vamp:category "Visualisation" .
 <http://vamp-plugins.org/rdf/plugins/ua-vamp-plugins#onsetsua> vamp:category "Time > Onsets" .
 <http://vamp-plugins.org/rdf/plugins/ua-vamp-plugins#mf0ua> vamp:category "Notes" .
+<http://vamp-plugins.org/rdf/plugins/FChT_f0gram#fchtransformf0gram> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mznevermore> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzchronogram> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzharmonicspectrum> vamp:category "Visualisation" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzpowercurve> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#spectralflux> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#spectralreflux> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_centroid> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_lpcc> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_lsp> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_mfcc> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_rolloff> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_scf> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_sfm> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_zero_crossings> vamp:category "Low Level Features" . 
