@@ -101,8 +101,8 @@
 <http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzchronogram> vamp:category "Visualisation" .
 <http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzharmonicspectrum> vamp:category "Visualisation" .
 <http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzpowercurve> vamp:category "Low Level Features" .
-<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#spectralflux> vamp:category "Low Level Features" .
-<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#spectralreflux> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzspectralflux> vamp:category "Low Level Features" .
+<http://vamp-plugins.org/rdf/plugins/mazurka-plugins#mzspectralreflux> vamp:category "Low Level Features" .
 <http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_centroid> vamp:category "Low Level Features" . 
 <http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_lpcc> vamp:category "Low Level Features" . 
 <http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_lsp> vamp:category "Low Level Features" . 
