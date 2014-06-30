@@ -26,7 +26,7 @@
     vamp:available_plugin plugbase:onsetsds ; 
     foaf:maker            :maker ;
     foaf:page <http://code.soundsoftware.ac.uk/projects/vamp-onsetsds-plugin> ;
-    doap:download-page: <http://sourceforge.net/projects/vamp/files/vamp-onsetsds-plugin/0.2/> ;
+    doap:download-page <http://sourceforge.net/projects/vamp/files/vamp-onsetsds-plugin/0.2/> ;
     vamp:has_source true ;
     vamp:has_binary "win32" ;
     vamp:has_binary "osx" ;
