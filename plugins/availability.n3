@@ -61,3 +61,23 @@ cpt:library
     vamp:has_binary "linux64" ;
     vamp:has_binary "win32" ;
     .
+
+
+@prefix cqvamp: <http://vamp-plugins.org/rdf/plugins/cqvamp#> .
+
+cqvamp:library
+    vamp:has_binary "osx" ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    .
+
+
+@prefix silvet: <http://vamp-plugins.org/rdf/plugins/silvet#> .
+
+silvet:library
+    vamp:has_binary "osx" ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    .
