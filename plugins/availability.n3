@@ -57,6 +57,8 @@ aubio:library
 @prefix cpt: <http://vamp-plugins.org/rdf/plugins/cepstral-pitchtracker#> .
 
 cpt:library
+    doap:download-page <http://code.soundsoftware.ac.uk/projects/cepstral-pitchtracker/files/> ;
+    vamp:has_source true ;
     vamp:has_binary "osx" ;
     vamp:has_binary "linux64" ;
     vamp:has_binary "win32" ;
@@ -66,6 +68,8 @@ cpt:library
 @prefix cqvamp: <http://vamp-plugins.org/rdf/plugins/cqvamp#> .
 
 cqvamp:library
+    doap:download-page <http://code.soundsoftware.ac.uk/projects/constant-q-cpp/files/> ;
+    vamp:has_source true ;
     vamp:has_binary "osx" ;
     vamp:has_binary "linux32" ;
     vamp:has_binary "linux64" ;
@@ -76,6 +80,8 @@ cqvamp:library
 @prefix silvet: <http://vamp-plugins.org/rdf/plugins/silvet#> .
 
 silvet:library
+    doap:download-page <http://code.soundsoftware.ac.uk/projects/silvet/files/> ;
+    vamp:has_source true ;
     vamp:has_binary "osx" ;
     vamp:has_binary "linux32" ;
     vamp:has_binary "linux64" ;
