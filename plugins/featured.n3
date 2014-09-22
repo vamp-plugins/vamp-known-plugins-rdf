@@ -5,7 +5,7 @@
 vamp:featured_plugin_list
     vamp:has_featured_plugin "silvet:silvet" ;
     vamp:has_featured_plugin "nnls-chroma:chordino" ;
-    vamp:has_featured_plugin "melodia:melodia" ;
+    vamp:has_featured_plugin "mtg-melodia:melodia" ;
 
     .
 
