@@ -87,3 +87,13 @@ silvet:library
     vamp:has_binary "linux64" ;
     vamp:has_binary "win32" ;
     .
+
+@prefix tempogram: <http://vamp-plugins.org/rdf/plugins/tempogram#> .
+
+tempogram:library
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "linux32" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    .

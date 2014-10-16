@@ -21,3 +21,5 @@ http://www.vamp-plugins.org/rdf/plugins/cepstral-pitchtracker
 http://www.vamp-plugins.org/rdf/plugins/cqvamp
 http://www.vamp-plugins.org/rdf/plugins/ua-vamp-plugins
 http://www.vamp-plugins.org/rdf/plugins/mfs
+http://www.vamp-plugins.org/rdf/plugins/tempogram
+
