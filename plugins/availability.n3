@@ -97,3 +97,10 @@ tempogram:library
     vamp:has_binary "linux64" ;
     vamp:has_binary "win32" ;
     .
+
+@prefix miredu: <http://vamp-plugins.org/rdf/plugins/mir-edu#> .
+
+miredu:library
+    vamp:has_source true
+    .
+
