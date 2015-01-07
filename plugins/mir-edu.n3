@@ -10,6 +10,7 @@
 @prefix :         <#> .
 
 <>  a   vamp:PluginDescription ;
+    foaf:maker		:maker ;
     foaf:maker          <http://www.vamp-plugins.org/doap.rdf#template-generator> ;
     foaf:primaryTopic   <http://vamp-plugins.org/rdf/plugins/mir-edu> .
 
