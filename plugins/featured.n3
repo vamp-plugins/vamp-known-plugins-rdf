@@ -10,5 +10,6 @@ vamp:featured_plugin_list
     vamp:has_featured_plugin "segmentino:segmentino" ;
     vamp:has_featured_plugin "ua-vamp-plugins:mf0ua" ;
     vamp:has_featured_plugin "tempogram:tempogram" ;
+    vamp:has_featured_plugin "vamp-aubio:aubionotes" ;
     .
 
