@@ -89,4 +89,11 @@ tempogram:library
     vamp:has_binary "win32" ;
     .
 
+@prefix tipic: <http://vamp-plugins.org/rdf/plugins/tipic#> .
 
+tipic:library
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "linux64" ;
+    vamp:has_binary "win32" ;
+    .
