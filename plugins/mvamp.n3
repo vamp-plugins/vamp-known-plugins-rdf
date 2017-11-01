@@ -32,7 +32,7 @@
     vamp:available_plugin plugbase:marsyas_bextract_zero_crossings ; 
     vamp:has_source true ;
     vamp:has_binary "linux32" ;
-    foaf:page <http://marsyas.info/download/vamp_plugins/> ;
+    foaf:page <http://marsyas.info/downloads/vamp-plugins.html> ;
     .
 
 plugbase:marsyas_bextract_centroid a   vamp:Plugin ;
