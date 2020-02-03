@@ -20,6 +20,7 @@
 :mvamp a  vamp:PluginLibrary ;
     vamp:identifier "mvamp"  ;
     dc:title "MARSYAS Vamp plugins" ;
+    foaf:maker :maker ;
     dc:description "Low-level feature extraction plugins containing functionality from the MARSYAS batch feature extractor" ;
     
     vamp:available_plugin plugbase:marsyas_bextract_centroid ; 
