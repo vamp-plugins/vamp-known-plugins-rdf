@@ -529,7 +529,7 @@ plugbase:aubiomfcc a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ;
     vamp:identifier       "aubiomfcc" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "4" ;
+    owl:versionInfo       "3" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiomfcc_param_nfilters ;
@@ -577,7 +577,7 @@ plugbase:aubiomelenergy a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ;
     vamp:identifier       "aubiomelenergy" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "4" ;
+    owl:versionInfo       "3" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiomelenergy_param_nfilters ;
@@ -613,7 +613,7 @@ plugbase:aubiospecdesc a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ;
     vamp:identifier       "aubiospecdesc" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "4" ;
+    owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiospecdesc_param_specdesctype ;
