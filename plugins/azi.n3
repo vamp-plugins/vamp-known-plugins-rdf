@@ -1,4 +1,3 @@
-LibXtract compiled with ooura FFT
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 @prefix vamp:     <http://purl.org/ontology/vamp/> .
@@ -23,8 +22,8 @@ LibXtract compiled with ooura FFT
 
 :library_maker
     foaf:name  "Chris Cannam" ;
-#   foaf:page  <> ;  # Place maker's homepage URL in here and uncomment
-#   foaf:logo  <> ;  # URL of an image here, if you happen to have a logo
+    foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png> ;
+    foaf:page <http://c4dm.eecs.qmul.ac.uk/>
     .
 
 
@@ -34,10 +33,9 @@ plugbase:library a vamp:PluginLibrary ;
     vamp:identifier        "azi" ;
     foaf:maker             :library_maker ; 
     vamp:available_plugin  plugbase:azi ; 
-#   dc:title               "" ;  # Place library name here and uncomment
-#   dc:description         "" ;  # Place library description here and uncomment
-#   foaf:page              <> ;  # Place more-info HTML page URL here and uncomment
-#   doap:download-page     <> ;  # Place download HTML page URL here and uncomment
+    dc:title               "Stereo Plan" ;
+    dc:description         "Azimuth-based stereo plan" ;
+    foaf:page              <http://code.soundsoftware.ac.uk/projects/azi> ;
     .
 
 
