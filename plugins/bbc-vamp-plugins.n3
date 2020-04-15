@@ -22,6 +22,7 @@
 plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "bbc-vamp-plugins"  ; 
     dc:title "BBC Vamp Plugins"  ; 
+    foaf:maker :maker ;
     dc:description "A collection of audio feature extraction algorithms from BBC Research and Development" ;
     foaf:page <https://github.com/bbcrd/bbc-vamp-plugins/blob/master/README.md> ;
     doap:download-page <https://github.com/bbcrd/bbc-vamp-plugins/releases> ;

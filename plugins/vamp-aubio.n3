@@ -523,13 +523,13 @@ plugbase:aubiomfcc a   vamp:Plugin ;
     dc:title              "Aubio Mfcc Extractor" ;
     vamp:name             "Aubio Mfcc Extractor" ;
     vamp:category	  "Low Level Features" ;
-    dc:description        """Detect levels below a certain threshold""" ;
+    dc:description        """Extract Mel-Frequency Cepstrum Coefficients""" ;
     foaf:maker :maker ;
     dc:rights             """GPL""" ;
 #   cc:license            <Place plugin license URI here and uncomment> ;
     vamp:identifier       "aubiomfcc" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "4" ;
+    owl:versionInfo       "3" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiomfcc_param_nfilters ;
@@ -559,15 +559,13 @@ plugbase:aubiomfcc_param_ncoeffs a  vamp:Parameter ;
     vamp:default_value   13 ;
     vamp:value_names     ();
     .
-plugbase:aubiomfcc_output_silencelevel a  vamp:DenseOutput ;
+plugbase:aubiomfcc_output_mfcc a  vamp:DenseOutput ;
     vamp:identifier       "mfcc" ;
     dc:title              "Mel-Frequency Cepstrum Coefficients" ;
     dc:description        """List of detected Mel-Frequency Cepstrum Coefficients""" ;
-    dc:description        """"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
-    a                     vamp:QuantizedOutput ;
-    vamp:bin_count        1 ;
+    vamp:bin_count        0 ;
     .
 plugbase:aubiomelenergy a   vamp:Plugin ;
     dc:title              "Aubio Mel-Frequency Bands Extractor" ;
@@ -579,7 +577,7 @@ plugbase:aubiomelenergy a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ;
     vamp:identifier       "aubiomelenergy" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "4" ;
+    owl:versionInfo       "3" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiomelenergy_param_nfilters ;
@@ -601,11 +599,9 @@ plugbase:aubiomelenergy_output_melenergy a  vamp:DenseOutput ;
     vamp:identifier       "melenergy" ;
     dc:title              "Mel-Frequency Cepstrum Coefficients" ;
     dc:description        """List of measured energy in each Mel-frequency bands""" ;
-    dc:description        """"""  ;
     vamp:fixed_bin_count  "true" ;
     vamp:unit             "" ;
-    a                     vamp:QuantizedOutput ;
-    vamp:bin_count        1 ;
+    vamp:bin_count        0 ;
     .
 plugbase:aubiospecdesc a   vamp:Plugin ;
     dc:title              "Aubio Spectral Descriptor" ;
@@ -617,7 +613,7 @@ plugbase:aubiospecdesc a   vamp:Plugin ;
 #   cc:license            <Place plugin license URI here and uncomment> ;
     vamp:identifier       "aubiospecdesc" ;
     vamp:vamp_API_version vamp:api_version_2 ;
-    owl:versionInfo       "4" ;
+    owl:versionInfo       "2" ;
     vamp:input_domain     vamp:TimeDomain ;
 
     vamp:parameter   plugbase:aubiospecdesc_param_specdesctype ;

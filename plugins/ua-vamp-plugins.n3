@@ -36,7 +36,7 @@ plugbase:library a vamp:PluginLibrary ;
     vamp:available_plugin  plugbase:mf0ua ; 
     vamp:available_plugin  plugbase:onsetsua ; 
     dc:title               "University of Alicante Vamp Plugins" ;  
-    dc:description         """The UAPlugins set is a library of VAMP plugins developed in the DRIMS project to perform onset detection and polyphonic transcription. The methods used in this library were developed by Antonio Pertusa and José Manuel Iñesta.""" ; 
+    dc:description         """The UAPlugins set is a library of Vamp plugins developed in the DRIMS project to perform onset detection and polyphonic transcription. The methods used in this library were developed by Antonio Pertusa and José Manuel Iñesta.""" ; 
     foaf:page              <http://grfia.dlsi.ua.es/cm/projects/drims/softwareVAMP.php> ; 
     doap:download-page     <http://grfia.dlsi.ua.es/cm/projects/drims/softwareVAMP.php> ; 
     vamp:has_source true;
