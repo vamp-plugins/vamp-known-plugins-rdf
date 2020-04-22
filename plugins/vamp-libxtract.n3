@@ -17,7 +17,7 @@
 :maker
     foaf:name "Chris Cannam and Jamie Bullock" .
 
-:vamp-libxtract a  vamp:PluginLibrary ;
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "vamp-libxtract"  ; 
     dc:title "libxtract Vamp plugins" ;
     dc:description """Low-level feature extraction plugins using Jamie Bullock's libxtract library to provide around 50 spectral and other features""" ;

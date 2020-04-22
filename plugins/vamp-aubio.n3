@@ -19,7 +19,7 @@
     foaf:logo <http://aubio.org/smallrect.png> ;
     foaf:page <http://aubio.org> .
 
-:vamp-aubio a  vamp:PluginLibrary ;
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "vamp-aubio"  ; 
     dc:title "Vamp Aubio plugins" ;
     dc:description "The Vamp Aubio Plugins provide methods from Paul Brossier's aubio annotation library, including beat and tempo tracking, onset detection, pitch detection, note tracking, silence detector, and Mel-frequency cepstral coefficients." ;

@@ -19,7 +19,7 @@
     foaf:logo <http://vamp-plugins.org/rdf/plugins/makers/qm.png> ;
     foaf:page <http://c4dm.eecs.qmul.ac.uk/> .
 
-:segmentino a  vamp:PluginLibrary ;
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "segmentino"  ; 
     vamp:available_plugin plugbase:segmentino ; 
     foaf:page <http://code.soundsoftware.ac.uk/projects/segmenter-vamp-plugin> ;

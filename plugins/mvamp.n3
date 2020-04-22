@@ -17,7 +17,7 @@
     foaf:name "Marsyas Plugins" ;
     foaf:page <http://marsyas.info/> .
 
-:mvamp a  vamp:PluginLibrary ;
+plugbase:library a  vamp:PluginLibrary ;
     vamp:identifier "mvamp"  ;
     dc:title "MARSYAS Vamp plugins" ;
     foaf:maker :maker ;

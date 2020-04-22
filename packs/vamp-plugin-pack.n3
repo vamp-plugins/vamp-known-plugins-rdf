@@ -28,21 +28,21 @@ packbase:vamp-plugin-pack a vamp:PluginPack ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/beatroot-vamp#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/cepstral-pitchtracker#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/cqvamp#library> ;
-    vamp:available_library <http://vamp-plugins.org/rdf/plugins/fanchirp#library> ;
+    vamp:available_library <http://vamp-plugins.org/rdf/plugins/FChT_f0gram#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/match-vamp-plugin#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/mvamp#library> ;
-    vamp:available_library <http://vamp-plugins.org/rdf/plugins/nnls-chroma#nnls-chroma> ;
+    vamp:available_library <http://vamp-plugins.org/rdf/plugins/nnls-chroma#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/pyin#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/qm-vamp-plugins#library> ;
-    vamp:available_library <http://vamp-plugins.org/rdf/plugins/segmentino#segmentino> ;
+    vamp:available_library <http://vamp-plugins.org/rdf/plugins/segmentino#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/silvet#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/simple-cepstrum#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/tempogram#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/tipic#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/tuning-difference#library> ;
     vamp:available_library <http://vamp-plugins.org/rdf/plugins/ua-vamp-plugins#library> ;
-    vamp:available_library <http://vamp-plugins.org/rdf/plugins/vamp-aubio#vamp-aubio> ;
-    vamp:available_library <http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#vamp-example-plugins> ;
-    vamp:available_library <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#vamp-libxtract>
+    vamp:available_library <http://vamp-plugins.org/rdf/plugins/vamp-aubio#library> ;
+    vamp:available_library <http://vamp-plugins.org/rdf/plugins/vamp-example-plugins#library> ;
+    vamp:available_library <http://vamp-plugins.org/rdf/plugins/vamp-libxtract#library>
     .
 
