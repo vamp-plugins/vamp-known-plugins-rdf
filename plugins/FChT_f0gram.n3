@@ -30,7 +30,7 @@
 ## Properties of the plugin library, and references to the plugins it contains
 
 plugbase:library a vamp:PluginLibrary ;
-    vamp:identifier        "FChT_f0gram" ;
+    vamp:identifier        "fanchirp" ;
     foaf:maker             :library_maker ; 
     vamp:available_plugin  plugbase:fchtransformf0gram ; 
     dc:title               "Fan Chirp F0gram" ;  # Place library name here and uncomment
