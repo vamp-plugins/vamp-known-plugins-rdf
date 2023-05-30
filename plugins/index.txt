@@ -4,6 +4,7 @@ http://www.vamp-plugins.org/rdf/plugins/bbc-vamp-plugins
 http://www.vamp-plugins.org/rdf/plugins/beatroot-vamp
 http://www.vamp-plugins.org/rdf/plugins/cepstral-pitchtracker
 http://www.vamp-plugins.org/rdf/plugins/cqvamp
+http://www.vamp-plugins.org/rdf/plugins/expressive-means
 http://www.vamp-plugins.org/rdf/plugins/extra-categories
 http://www.vamp-plugins.org/rdf/plugins/FChT_f0gram
 http://www.vamp-plugins.org/rdf/plugins/featured
