@@ -25,7 +25,7 @@ basicpitch:library a vamp:PluginLibrary ;
     dc:title               "Basic Pitch" ;
     dc:description         "Implementation of Spotify's Basic Pitch automatic music transcription library, as a Vamp plugin" ;
     foaf:page              <https://github.com/Ircam-Partiels/basic-pitch-vamp-plugin> ;
-    doap:download-page     <https://github.com/Ircam-Partiels/basic-pitch-vamp-plugin/releases>
+    doap:download-page     <https://github.com/Ircam-Partiels/basic-pitch-vamp-plugin/releases> ;
     vamp:has_source true ;
     vamp:has_binary "osx" ;
     vamp:has_binary "win32" ;
@@ -49,14 +49,14 @@ crepe:library a vamp:PluginLibrary ;
     dc:title               "Crepe Vamp Plugin" ;
     dc:description         "Implementation of the CREPE monophonic pitch tracker, as a Vamp plugin" ;
     foaf:page              <https://github.com/Ircam-Partiels/crepe-vamp-plugin> ;
-    doap:download-page     <https://github.com/Ircam-Partiels/crepe-vamp-plugin/releases>
+    doap:download-page     <https://github.com/Ircam-Partiels/crepe-vamp-plugin/releases> ;
     vamp:has_source true ;
     vamp:has_binary "osx" ;
     vamp:has_binary "win32" ;
     vamp:has_binary "linux64" ;
     .
 
-plugbase:crepe a vamp:Plugin ;
+crepe:crepe a vamp:Plugin ;
     dc:title              "Crepe" ;
     vamp:name             "Crepe" ;
     dc:description        """Monophonic pitch tracker Crepe model.""" ;
@@ -74,14 +74,14 @@ whisper:library a vamp:PluginLibrary ;
     dc:title               "Whisper Vamp Plugin" ;
     dc:description         "Implementation of the OpenAI Whisper speech recognition model, as a Vamp plugin" ;
     foaf:page              <https://github.com/Ircam-Partiels/whisper-vamp-plugin> ;
-    doap:download-page     <https://github.com/Ircam-Partiels/whisper-vamp-plugin/releases>
+    doap:download-page     <https://github.com/Ircam-Partiels/whisper-vamp-plugin/releases> ;
     vamp:has_source true ;
     vamp:has_binary "osx" ;
     vamp:has_binary "win32" ;
     vamp:has_binary "linux64" ;
     .
 
-plugbase:whisper a vamp:Plugin ;
+whisper:whisper a vamp:Plugin ;
     dc:title              "Whisper" ;
     vamp:name             "Whisper" ;
     dc:description        """Automatic speech recognition using OpenAI's Whisper model.""" ;
