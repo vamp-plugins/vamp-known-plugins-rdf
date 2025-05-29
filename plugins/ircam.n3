@@ -1,0 +1,93 @@
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix basicpitch: <http://vamp-plugins.org/rdf/plugins/ircambasicpitch#> .
+@prefix crepe:    <http://vamp-plugins.org/rdf/plugins/ircamcrepe#> .
+@prefix whisper:  <http://vamp-plugins.org/rdf/plugins/ircamwhisper#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix af:       <http://purl.org/ontology/af/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix doap:     <http://usefulinc.com/ns/doap#> .
+@prefix cc:       <http://web.resource.org/cc/> .
+@prefix :         <#> .
+
+:library_maker
+    foaf:name  "IRCAM" ;
+    foaf:page  <https://www.ircam.fr/> ;
+    foaf:logo  <http://vamp-plugins.org/rdf/plugins/makers/ircam.png> ;
+    .
+
+basicpitch:library a vamp:PluginLibrary ;
+    vamp:identifier        "ircambasicpitch" ;
+    foaf:maker             :library_maker ; 
+    vamp:available_plugin  basicpitch:basicpitch ;
+    dc:title               "Basic Pitch" ;
+    dc:description         "Implementation of Spotify's Basic Pitch automatic music transcription library, as a Vamp plugin" ;
+    foaf:page              <https://github.com/Ircam-Partiels/basic-pitch-vamp-plugin> ;
+    doap:download-page     <https://github.com/Ircam-Partiels/basic-pitch-vamp-plugin/releases>
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "linux64" ;
+    .
+
+basicpitch:basicpitch a vamp:Plugin ;
+    dc:title              "Basic Pitch" ;
+    vamp:name             "Basic Pitch" ;
+    dc:description        """Automatic music transcription using lightweight neural network by Spotify's Audio Intelligence Lab.""" ;
+    foaf:maker            :library_maker ;
+    dc:rights             """Basic Pitch model by Spotify's Audio Intelligence Lab. Basic Pitch Vamp Plugin by Pierre Guillot. Copyright 2024 Ircam. All rights reserved.""" ;
+    vamp:identifier       "basicpitch" ;
+    vamp:vamp_API_version vamp:api_version_2 ;
+    .
+
+crepe:library a vamp:PluginLibrary ;
+    vamp:identifier        "ircamcrepe" ;
+    foaf:maker             :library_maker ; 
+    vamp:available_plugin  crepe:crepe ; 
+    dc:title               "Crepe Vamp Plugin" ;
+    dc:description         "Implementation of the CREPE monophonic pitch tracker, as a Vamp plugin" ;
+    foaf:page              <https://github.com/Ircam-Partiels/crepe-vamp-plugin> ;
+    doap:download-page     <https://github.com/Ircam-Partiels/crepe-vamp-plugin/releases>
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "linux64" ;
+    .
+
+plugbase:crepe a vamp:Plugin ;
+    dc:title              "Crepe" ;
+    vamp:name             "Crepe" ;
+    dc:description        """Monophonic pitch tracker Crepe model.""" ;
+    foaf:maker            :library_maker ;
+    dc:rights             """Crepe model by Jong Wook Kim, Justin Salamon, Peter Li & Juan Pablo Bello. Crepe Vamp Plugin by Pierre Guillot. Copyright 2024 Ircam. All rights reserved.""" ;
+    vamp:identifier       "crepe" ;
+    vamp:vamp_API_version vamp:api_version_2 ;
+    owl:versionInfo       "2" ;
+    .
+
+whisper:library a vamp:PluginLibrary ;
+    vamp:identifier        "ircamwhisper" ;
+    foaf:maker             :library_maker ; 
+    vamp:available_plugin  whisper:whisper ; 
+    dc:title               "Whisper Vamp Plugin" ;
+    dc:description         "Implementation of the OpenAI Whisper speech recognition model, as a Vamp plugin" ;
+    foaf:page              <https://github.com/Ircam-Partiels/whisper-vamp-plugin> ;
+    doap:download-page     <https://github.com/Ircam-Partiels/whisper-vamp-plugin/releases>
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "linux64" ;
+    .
+
+plugbase:whisper a vamp:Plugin ;
+    dc:title              "Whisper" ;
+    vamp:name             "Whisper" ;
+    dc:description        """Automatic speech recognition using OpenAI's Whisper model.""" ;
+    foaf:maker            :library_maker ;
+    dc:rights             """Whisper models by OpenAI. Whisper.cpp by Georgi Gerganov. Whisper Vamp Plugin by Pierre Guillot. Copyright 2024 Ircam. All rights reserved.""" ;
+    vamp:identifier       "whisper" ;
+    vamp:vamp_API_version vamp:api_version_2 ;
+    owl:versionInfo       "2" ;
+    .
