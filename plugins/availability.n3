@@ -105,3 +105,19 @@ expressivemeans:library
     vamp:has_binary "osx" ;
     vamp:has_binary "win32" ;
     .
+
+@prefix mert: <http://vamp-plugins.org/rdf/plugins/mert-vamp-plugin#> .
+
+mert:library
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    vamp:has_binary "win32" ;
+    vamp:has_binary "linux64" ;
+    .
+
+@prefix lossy: <http://vamp-plugins.org/rdf/plugins/vamp-lossy-encoding-detector#> .
+
+lossy:library
+    vamp:has_source true ;
+    vamp:has_binary "osx" ;
+    .

@@ -111,3 +111,4 @@
 <http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_scf> vamp:category "Low Level Features" . 
 <http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_sfm> vamp:category "Low Level Features" . 
 <http://vamp-plugins.org/rdf/plugins/mvamp#marsyas_bextract_zero_crossings> vamp:category "Low Level Features" . 
+<http://vamp-plugins.org/rdf/plugins/mert-vamp-plugin#mert-vamp-plugin> vamp:category "Low Level Features" . 
